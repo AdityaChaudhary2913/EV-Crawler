@@ -3,4 +3,3 @@ config.toml
 pycache
 __pycache__/
 reports
-data
