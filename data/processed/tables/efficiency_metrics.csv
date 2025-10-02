@@ -1,0 +1,2 @@
+throughput_items_per_sec,success_rate,dedup_rate,items_per_api_call,fetch_to_write_ratio,total_api_calls,total_items_written,total_elapsed_sec
+0.17345352350082419,1.0,0.00911854103343465,0.3336745138178096,0.5249597423510467,977,326,1879.466
