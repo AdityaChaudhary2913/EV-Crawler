@@ -101,6 +101,7 @@ def run():
                 query = payload["query"]
                 for s in search_submissions(client, subreddit, query, limit=50, qps=qps):
                     items_fetched += 1
+                    success_calls += 1  # Successfully fetched a post from API
                     try:
                         post_id = s.id
                         if post_id in seen_posts:
@@ -200,6 +201,7 @@ def run():
             elif etype == "comments":
                 sid = payload["submission_id"]
                 for c in fetch_comments(client, sid, qps=qps):
+                    success_calls += 1  # Successfully fetched a comment from API
                     try:
                         body = getattr(c, "body", "") or ""
                         if len(body.strip()) < min_text_len:
@@ -263,6 +265,7 @@ def run():
             elif etype == "author":
                 name = payload["author"]
                 for s in fetch_author_submissions(client, name, limit=25, qps=qps):
+                    success_calls += 1  # Successfully fetched author submission from API
                     # Push back into search-like processing
                     fr.push(priority=1.0, item=("submission", {"subreddit": str(getattr(s, "subreddit", "")), "id": s.id}))
 
@@ -274,6 +277,7 @@ def run():
         from .fetch_hn import iter_recent_stories
 
         for item in iter_recent_stories(limit=max(500, max_items * 5), qps=qps):
+            success_calls += 1  # Successfully fetched HN story from API
             try:
                 items_fetched += 1
                 if item.get("type") != "story":

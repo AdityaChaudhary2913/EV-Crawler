@@ -16,8 +16,8 @@ $PY -m crawler.crawl --platform "reddit" --max_items "200" --hours "72"
 echo "[4/6] Link-structure analysis..."
 $PY -m analysis.link_graph || true
 
-echo "[5/6] Prepare labels..."
-$PY -m analysis.relevance_eval --prepare_labels || true
+echo "[5/6] Relevance analysis..."
+$PY -m analysis.relevance_eval --analyze_distribution || true
 
 echo "[6/6] Efficiency metrics..."
 $PY -m analysis.efficiency_eval || true

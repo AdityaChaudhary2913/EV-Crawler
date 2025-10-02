@@ -81,8 +81,15 @@ def main():
     os.makedirs(tables_dir, exist_ok=True)
     nodes, edges = _load_graph(out_dir)
 
+    # Count different node types for summary
+    node_types = nodes['node_type'].value_counts().to_dict() if 'node_type' in nodes.columns else {}
+    edge_types = edges['edge_type'].value_counts().to_dict() if 'edge_type' in edges.columns else {}
+
     # Author reply graph
     G = author_reply_graph(edges)
+    num_authors = G.number_of_nodes()
+    num_reply_edges = G.number_of_edges()
+    
     if G.number_of_edges() > 0 and G.number_of_nodes() > 1:
         pr = nx.pagerank(G, alpha=0.85)
         pd.DataFrame(sorted(pr.items(), key=lambda x: x[1], reverse=True), columns=["author_id", "pagerank"]).to_csv(
@@ -107,7 +114,24 @@ def main():
     cont_df = container_projection(edges)
     cont_df.to_csv(os.path.join(tables_dir, "container_shared_authors.csv"), index=False)
 
+    # Create network summary
+    network_summary = pd.DataFrame([{
+        "total_nodes": len(nodes),
+        "total_edges": len(edges),
+        "unique_authors": num_authors,
+        "author_reply_edges": num_reply_edges,
+        "unique_domains": len(domain_df),
+        "container_pairs": len(cont_df),
+        "node_types": str(node_types),
+        "edge_types": str(edge_types),
+    }])
+    network_summary.to_csv(os.path.join(tables_dir, "network_summary.csv"), index=False)
+
     print(f"Wrote tables to {tables_dir}")
+    print(f"Network summary: {len(nodes)} nodes, {len(edges)} edges, {num_authors} unique authors")
+    if len(domain_df) > 0:
+        print(f"Top domain: {domain_df.iloc[0]['domain_id']} ({domain_df.iloc[0]['weight']} references)")
+    print(f"Author interactions: {num_reply_edges} reply relationships")
 
 
 if __name__ == "__main__":

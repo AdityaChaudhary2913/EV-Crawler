@@ -33,12 +33,68 @@ def dcg(scores: List[int]) -> float:
     return sum((s / np.log2(i + 2)) for i, s in enumerate(scores))
 
 
+def analyze_relevance_distribution(out_dir: str) -> None:
+    """Analyze actual relevance score distribution from posts.jsonl"""
+    posts_path = os.path.join(out_dir, "posts.jsonl")
+    tables_dir = os.path.join(out_dir, "tables")
+    os.makedirs(tables_dir, exist_ok=True)
+    
+    if not os.path.exists(posts_path):
+        print("posts.jsonl not found; run crawler first.")
+        return
+        
+    df = pd.read_json(posts_path, lines=True)
+    if df.empty:
+        print("No records found for relevance analysis.")
+        return
+
+    # Analyze relevance score distribution
+    scores = df["relevance_score"]
+    
+    # Count items by relevance level
+    zero_score = (scores == 0.0).sum()
+    positive_score = (scores > 0.0).sum()
+    high_score = (scores >= 3.0).sum()
+    very_high_score = (scores >= 5.0).sum()
+    
+    # Basic statistics
+    mean_score = scores.mean()
+    median_score = scores.median()
+    max_score = scores.max()
+    std_score = scores.std()
+    
+    # Calculate meaningful thresholds based on actual data
+    relevant_threshold = 1.0  # Items with score > 1.0 considered relevant
+    relevant_items = (scores > relevant_threshold).sum()
+    relevance_rate = relevant_items / len(scores) if len(scores) > 0 else 0.0
+    
+    out = pd.DataFrame([{
+        "total_items": len(scores),
+        "zero_score_items": zero_score,
+        "positive_score_items": positive_score,
+        "high_score_items": high_score,
+        "very_high_score_items": very_high_score,
+        "relevance_rate": relevance_rate,
+        "mean_score": mean_score,
+        "median_score": median_score,
+        "max_score": max_score,
+        "std_score": std_score,
+        "relevant_threshold": relevant_threshold,
+    }])
+    
+    out.to_csv(os.path.join(tables_dir, "relevance_analysis.csv"), index=False)
+    print(f"Wrote relevance analysis to {os.path.join(tables_dir, 'relevance_analysis.csv')}")
+    print(f"Summary: {len(scores)} items, {positive_score} positive scores ({positive_score/len(scores):.1%}), max score: {max_score:.2f}")
+
+
 def score_labels(out_dir: str, k: int) -> None:
     labels_path = os.path.join(out_dir, "labels", "labels.csv")
     tables_dir = os.path.join(out_dir, "tables")
     os.makedirs(tables_dir, exist_ok=True)
     if not os.path.exists(labels_path):
         print("labels.csv not found; run with --prepare_labels first.")
+        print("Running automatic relevance analysis instead...")
+        analyze_relevance_distribution(out_dir)
         return
     df = pd.read_csv(labels_path)
     if "label" not in df.columns:
@@ -75,13 +131,22 @@ def main():
     p = argparse.ArgumentParser()
     p.add_argument("--prepare_labels", action="store_true")
     p.add_argument("--score_labels", action="store_true")
+    p.add_argument("--analyze_distribution", action="store_true", help="Analyze relevance score distribution")
     p.add_argument("--k", type=int, default=100)
     args = p.parse_args()
     out_dir = "data/processed"
+    
     if args.prepare_labels:
         prepare_labels(out_dir)
     if args.score_labels:
         score_labels(out_dir, args.k)
+    if args.analyze_distribution:
+        analyze_relevance_distribution(out_dir)
+    
+    # If no specific arguments, run distribution analysis by default
+    if not any([args.prepare_labels, args.score_labels, args.analyze_distribution]):
+        print("No specific analysis requested, running relevance distribution analysis...")
+        analyze_relevance_distribution(out_dir)
 
 
 if __name__ == "__main__":
