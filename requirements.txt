@@ -1,0 +1,12 @@
+praw
+requests
+tenacity
+pandas
+numpy
+scikit-learn
+networkx
+python-dateutil
+toml
+tldextract
+langid
+matplotlib

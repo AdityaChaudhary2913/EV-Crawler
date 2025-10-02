@@ -1,0 +1,28 @@
+[run]
+platform = "reddit"            # "reddit" or "hn"
+max_items = 2000               # number of relevant posts/comments to write
+hours = 72                     # lookback horizon
+out_dir = "data/processed"
+
+[crawler]
+qps = 0.8                      # requests/second ceiling
+checkpoint_every = 500         # (optional, not required to implement beyond metrics)
+min_text_len = 30
+
+[relevance]
+tau_data = 2.0                 # dataset admission threshold
+tau_frontier = 1.2             # frontier admission threshold (exploration)
+half_life_hours = 72           # recency half-life
+brand_bonus = 0.7
+policy_bonus = 0.4
+
+[reddit]
+client_id = "YOUR_CLIENT_ID"
+client_secret = "YOUR_CLIENT_SECRET"
+user_agent = "your-app-name by u/yourusername"
+
+[domain]
+subreddits = ["ElectricVehicles","IndianStreetBikes"] # defaults; user will change
+keywords = ["ev scooter","electric two-wheeler","Ather","Ola S1","FAME II","battery swap","charging","subsidy","fire"]
+brands   = ["Ather","Ola","TVS","Bajaj","Chetak","iQube"]
+policies = ["FAME","subsidy","GST","homologation","AIS-156"]

@@ -1,0 +1,6 @@
+config.toml
+.venv
+pycache
+__pycache__/
+reports
+data
