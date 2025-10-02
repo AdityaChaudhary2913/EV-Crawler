@@ -45,15 +45,6 @@ python -m analysis.relevance_eval --score_labels --k 100
 python -m analysis.efficiency_eval
 ```
 
-## Ethics / ToS
-- Use only public data. Respect platform policies and rate limits (`crawler.qps`).
-- Do not collect personal data beyond author handles already public.
-- Attribution: Provide your course assignment context if asked by platform admins.
-
-## Packaging for Drive
-- Zip `data/processed` and `reports/README_data.md`.
-- Include `config.toml` used for the run.
-
 ## KG-readiness
 - Records include sentence offsets, outbound domains, mentions (brand/policy), and provenance.
 - Graph exports include AUTHOR/CONTAINER/DOMAIN edges and mention edges, making Part 2 KG construction straightforward.
