@@ -1,2 +1,2 @@
 total_nodes,total_edges,unique_authors,author_reply_edges,unique_domains,container_pairs,node_types,edge_types
-690,677,142,222,15,0,"{'author': 321, 'comment': 292, 'post': 29, 'container': 29, 'domain': 19}","{'AUTHORED_BY': 321, 'REPLY_TO': 292, 'IN_CONTAINER': 29, 'LINKS_TO_DOMAIN': 19, 'MENTIONS_BRAND': 16}"
+2191,2105,420,741,28,0,"{'author': 1006, 'comment': 899, 'post': 107, 'container': 107, 'domain': 72}","{'AUTHORED_BY': 1006, 'REPLY_TO': 899, 'IN_CONTAINER': 107, 'LINKS_TO_DOMAIN': 72, 'MENTIONS_BRAND': 21}"
