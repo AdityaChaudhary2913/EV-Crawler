@@ -1,0 +1,299 @@
+{
+  "network_structure": {
+    "basic_stats": {
+      "num_nodes": 1541,
+      "num_edges": 2047,
+      "density": 0.0017251405311106804,
+      "is_connected": true
+    },
+    "components": {
+      "num_components": 1,
+      "largest_component_size": 1541,
+      "component_size_distribution": {
+        "1541": 1
+      }
+    },
+    "degree_analysis": {
+      "avg_degree": 2.656716417910448,
+      "max_degree": 107,
+      "min_degree": 1,
+      "degree_distribution": {
+        "2": 632,
+        "1": 365,
+        "107": 1,
+        "4": 81,
+        "3": 378,
+        "6": 14,
+        "10": 2,
+        "8": 7,
+        "45": 1,
+        "31": 1,
+        "5": 34,
+        "68": 1,
+        "11": 2,
+        "9": 6,
+        "84": 1,
+        "7": 6,
+        "26": 1,
+        "15": 2,
+        "19": 2,
+        "39": 1,
+        "17": 1,
+        "21": 1,
+        "53": 1
+      }
+    },
+    "hub_nodes": [
+      [
+        "reddit:container:ElectricVehicles",
+        107
+      ],
+      [
+        "reddit:post:1nw33mu",
+        84
+      ],
+      [
+        "reddit:post:1nw8h1x",
+        68
+      ],
+      [
+        "reddit:author:Hot_Zucchini7405",
+        53
+      ],
+      [
+        "reddit:post:1nwdb6j",
+        45
+      ],
+      [
+        "reddit:post:1nsncbh",
+        39
+      ],
+      [
+        "reddit:author:Dionysian-Heretic",
+        31
+      ],
+      [
+        "reddit:post:1ntvmbb",
+        26
+      ],
+      [
+        "reddit:author:Electrik_Truk",
+        21
+      ],
+      [
+        "reddit:post:1ntmq98",
+        19
+      ],
+      [
+        "reddit:author:spinfire",
+        19
+      ],
+      [
+        "reddit:comment:nhcxni4",
+        17
+      ],
+      [
+        "reddit:author:IanTrader",
+        15
+      ],
+      [
+        "reddit:comment:nhe2m8j",
+        15
+      ],
+      [
+        "reddit:post:1nw3cei",
+        11
+      ],
+      [
+        "reddit:post:1ntd7gf",
+        11
+      ],
+      [
+        "reddit:author:tech57",
+        10
+      ],
+      [
+        "reddit:author:NotYetReadyToRetire",
+        10
+      ],
+      [
+        "reddit:author:SjalabaisWoWS",
+        9
+      ],
+      [
+        "reddit:post:1ntg371",
+        9
+      ]
+    ],
+    "node_types": {
+      "post": 107,
+      "author": 497,
+      "container": 1,
+      "domain": 28,
+      "comment": 899
+    },
+    "edge_types": {
+      "AUTHORED_BY": 1006,
+      "IN_CONTAINER": 107,
+      "LINKS_TO_DOMAIN": 35,
+      "REPLY_TO": 899
+    },
+    "centrality": {
+      "top_degree_central": [
+        [
+          "reddit:container:ElectricVehicles",
+          0.06948051948051948
+        ],
+        [
+          "reddit:post:1nw33mu",
+          0.05454545454545454
+        ],
+        [
+          "reddit:post:1nw8h1x",
+          0.04415584415584416
+        ],
+        [
+          "reddit:author:Hot_Zucchini7405",
+          0.03441558441558441
+        ],
+        [
+          "reddit:post:1nwdb6j",
+          0.02922077922077922
+        ],
+        [
+          "reddit:post:1nsncbh",
+          0.025324675324675326
+        ],
+        [
+          "reddit:author:Dionysian-Heretic",
+          0.02012987012987013
+        ],
+        [
+          "reddit:post:1ntvmbb",
+          0.016883116883116882
+        ],
+        [
+          "reddit:author:Electrik_Truk",
+          0.013636363636363636
+        ],
+        [
+          "reddit:post:1ntmq98",
+          0.012337662337662338
+        ]
+      ],
+      "top_betweenness_central": [
+        [
+          "reddit:container:ElectricVehicles",
+          0.7584060667299444
+        ],
+        [
+          "reddit:post:1nw33mu",
+          0.3648101488542311
+        ],
+        [
+          "reddit:post:1nw8h1x",
+          0.3498761305799693
+        ],
+        [
+          "reddit:post:1nsncbh",
+          0.2501986035540987
+        ],
+        [
+          "reddit:post:1nwdb6j",
+          0.21068569474967305
+        ],
+        [
+          "reddit:post:1ntvmbb",
+          0.10998151300195785
+        ],
+        [
+          "reddit:comment:nhe2m8j",
+          0.08034216352038873
+        ],
+        [
+          "reddit:author:Dionysian-Heretic",
+          0.0776196974223633
+        ],
+        [
+          "reddit:author:Hot_Zucchini7405",
+          0.06940214053934969
+        ],
+        [
+          "reddit:post:1ntmq98",
+          0.060659119264957116
+        ]
+      ],
+      "top_closeness_central": [
+        [
+          "reddit:container:ElectricVehicles",
+          0.31877458083212584
+        ],
+        [
+          "reddit:post:1nw33mu",
+          0.2746566791510612
+        ],
+        [
+          "reddit:post:1nw8h1x",
+          0.2730496453900709
+        ],
+        [
+          "reddit:post:1nsncbh",
+          0.2639245929734362
+        ],
+        [
+          "reddit:post:1nwdb6j",
+          0.26026702720973466
+        ],
+        [
+          "reddit:post:1ntvmbb",
+          0.25122349102773245
+        ],
+        [
+          "reddit:post:1ntmq98",
+          0.24979724249797242
+        ],
+        [
+          "reddit:post:1nw3cei",
+          0.24487199872793766
+        ],
+        [
+          "reddit:post:1ntd7gf",
+          0.24487199872793766
+        ],
+        [
+          "reddit:post:1nwan2s",
+          0.24340129603287497
+        ]
+      ]
+    },
+    "clustering": {
+      "avg_clustering": 0.002842928216062544,
+      "global_clustering": 0.0004551891563827635
+    },
+    "largest_component_nodes": 1541
+  },
+  "discussion_patterns": {
+    "thread_analysis": {
+      "avg_thread_depth": 2.854357798165138,
+      "max_thread_depth": 10,
+      "total_reply_chains": 899
+    },
+    "domain_patterns": {
+      "total_external_links": 72,
+      "unique_domains": 28,
+      "posts_with_links": 17,
+      "avg_links_per_post": 4.235294117647059
+    },
+    "engagement_patterns": {
+      "active_authors": 497,
+      "lurker_authors": 509,
+      "participation_rate": 49.40357852882703,
+      "content_creators": 162,
+      "power_users": 38
+    },
+    "author_network": {
+      "connected_authors": 497,
+      "author_connections": 0
+    }
+  }
+}

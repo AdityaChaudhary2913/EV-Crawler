@@ -28,9 +28,11 @@ def create_output_directories():
             os.makedirs(directory)
             print(f"Created directory: {directory}")
 
-def run_complete_analysis(nodes_file='data/processed/nodes.csv', 
-                         edges_file='data/processed/edges.csv',
-                         output_dir='analysis'):
+def run_complete_analysis(
+    nodes_file="/Users/adityachaudhary/Desktop/SEMESTER_7/IKG/Crawler/data/processed/nodes.csv",
+    edges_file="/Users/adityachaudhary/Desktop/SEMESTER_7/IKG/Crawler/data/processed/edges.csv",
+    output_dir="analysis",
+):
     """
     Run complete analysis pipeline for EV discussion data.
     

@@ -1,0 +1,139 @@
+{
+  "brand_analysis": {
+    "distribution": {
+      "total_posts_with_brands": 19,
+      "total_brand_mentions": 37.0,
+      "avg_brands_per_post": 1.9473684210526316,
+      "max_brands_in_post": 5.0,
+      "posts_by_brand_count": {
+        "1.0": 12,
+        "5.0": 3,
+        "3.0": 2,
+        "2.0": 2
+      }
+    },
+    "top_brand_posts": [
+      {
+        "post_id": "reddit:post:1h1rcge",
+        "brand_mentions": 5.0,
+        "node_id": "reddit:post:1h1rcge",
+        "subreddit": "ElectricVehicles"
+      },
+      {
+        "post_id": "reddit:post:1nw3cei",
+        "brand_mentions": 5.0,
+        "node_id": "reddit:post:1nw3cei",
+        "subreddit": "ElectricVehicles"
+      },
+      {
+        "post_id": "reddit:post:1ntvmbb",
+        "brand_mentions": 5.0,
+        "node_id": "reddit:post:1ntvmbb",
+        "subreddit": "ElectricVehicles"
+      },
+      {
+        "post_id": "reddit:post:1jjcdy9",
+        "brand_mentions": 3.0,
+        "node_id": "reddit:post:1jjcdy9",
+        "subreddit": "ElectricVehicles"
+      },
+      {
+        "post_id": "reddit:post:1kxu7oq",
+        "brand_mentions": 3.0,
+        "node_id": "reddit:post:1kxu7oq",
+        "subreddit": "ElectricVehicles"
+      },
+      {
+        "post_id": "reddit:post:1lw9bqm",
+        "brand_mentions": 2.0,
+        "node_id": "reddit:post:1lw9bqm",
+        "subreddit": "ElectricVehicles"
+      },
+      {
+        "post_id": "reddit:post:1m5k814",
+        "brand_mentions": 2.0,
+        "node_id": "reddit:post:1m5k814",
+        "subreddit": "ElectricVehicles"
+      },
+      {
+        "post_id": "reddit:post:1nsncbh",
+        "brand_mentions": 1.0,
+        "node_id": "reddit:post:1nsncbh",
+        "subreddit": "ElectricVehicles"
+      },
+      {
+        "post_id": "reddit:post:1nwan2s",
+        "brand_mentions": 1.0,
+        "node_id": "reddit:post:1nwan2s",
+        "subreddit": "ElectricVehicles"
+      },
+      {
+        "post_id": "reddit:post:1nvl66z",
+        "brand_mentions": 1.0,
+        "node_id": "reddit:post:1nvl66z",
+        "subreddit": "ElectricVehicles"
+      }
+    ],
+    "subreddit_patterns": [
+      {
+        "subreddit": "ElectricVehicles",
+        "posts_with_brands": 19,
+        "total_brand_mentions": 37.0,
+        "avg_brands_per_post": 1.95
+      }
+    ]
+  },
+  "domain_analysis": {
+    "top_domains": {
+      "domain:youtu.be": 25,
+      "domain:reddit.com": 5,
+      "domain:youtube.com": 3,
+      "domain:chargevc.org": 3,
+      "domain:chooseev.com": 3,
+      "domain:wikipedia.org": 2,
+      "domain:theautopian.com": 2,
+      "domain:bchydro.com": 2,
+      "domain:investing.com": 2,
+      "domain:synergyfiles.com": 2,
+      "domain:ridethewindebikes.com": 2,
+      "domain:gachaco.co.jp": 2,
+      "domain:gaadiwaadi.com": 2,
+      "domain:amazon.ca": 2,
+      "domain:chargehub.com": 2,
+      "domain:canada.ca": 1,
+      "domain:treasury.gov": 1,
+      "domain:naf.no": 1,
+      "domain:geotab.com": 1,
+      "domain:sustainable-bus.com": 1
+    },
+    "total_domain_links": 72,
+    "unique_domains": 28
+  },
+  "engagement_analysis": {
+    "reply_patterns": {
+      "total_replies": 899,
+      "posts_with_replies": 444,
+      "avg_replies_per_thread": 2.024774774774775
+    },
+    "popular_threads": {
+      "reddit:post:1nw33mu": 81,
+      "reddit:post:1nw8h1x": 66,
+      "reddit:post:1nwdb6j": 43,
+      "reddit:post:1nsncbh": 37,
+      "reddit:post:1ntvmbb": 24,
+      "reddit:post:1ntmq98": 17,
+      "reddit:comment:nhcxni4": 15,
+      "reddit:comment:nhe2m8j": 13,
+      "reddit:post:1ntd7gf": 9,
+      "reddit:post:1nw3cei": 7
+    },
+    "container_activity": {
+      "reddit:container:ElectricVehicles": 107
+    }
+  },
+  "data_summary": {
+    "total_posts": 107,
+    "posts_with_brand_mentions": 19,
+    "brand_mention_rate": 17.75700934579439
+  }
+}

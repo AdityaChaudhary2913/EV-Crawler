@@ -4,9 +4,11 @@ tenacity
 pandas
 numpy
 scikit-learn
+seaborn
 networkx
 python-dateutil
 toml
 tldextract
 langid
 matplotlib
+scipy
