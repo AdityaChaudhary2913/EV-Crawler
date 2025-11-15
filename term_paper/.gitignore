@@ -1,0 +1,39 @@
+# LaTeX auxiliary files
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.nav
+*.snm
+*.vrb
+
+# LaTeX temporary files
+*.backup
+*~
+*.swp
+*.swo
+
+# Output files (keep in repo)
+# main.pdf
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Jupyter notebooks
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Editor files
+.vscode/
+.idea/
+*.sublime-*
