@@ -385,13 +385,153 @@ class ContentWeightedPageRank:
         
         df = pd.DataFrame(comparison_data)
         return df
+    
+    def evaluate_ranking_quality(self, k_values=[10, 20]) -> pd.DataFrame:
+        """
+        Compute evaluation metrics (Precision@k, nDCG@k) for all methods.
+        Uses relevance scores from posts as ground truth.
+        
+        Parameters:
+        -----------
+        k_values : list
+            List of k values to evaluate
+            
+        Returns:
+        --------
+        pd.DataFrame : Evaluation results
+        """
+        print("\n" + "="*60)
+        print("Computing Evaluation Metrics")
+        print("="*60)
+        
+        # Build ground truth from relevance scores
+        # Map authors to their average relevance scores
+        author_relevance = {}
+        author_post_counts = {}
+        
+        for post_data in self.posts:
+            author = post_data.get('author_name', '') or post_data.get('author', '')
+            if not author:
+                continue
+            
+            platform = post_data.get('platform', 'reddit')
+            author_node = f"{platform}:author:{author}"
+            relevance = post_data.get('relevance_score', 0.0)
+            
+            if author_node not in author_relevance:
+                author_relevance[author_node] = 0
+                author_post_counts[author_node] = 0
+            
+            author_relevance[author_node] += relevance
+            author_post_counts[author_node] += 1
+        
+        # Calculate average relevance per author
+        for author in author_relevance:
+            if author_post_counts[author] > 0:
+                author_relevance[author] /= author_post_counts[author]
+        
+        # Get all author nodes from the graph
+        authors = [n for n in self.G.nodes() if self.G.nodes[n].get('node_type') == 'author']
+        
+        # Ensure all authors have a relevance score (0 if not in posts)
+        for author in authors:
+            if author not in author_relevance:
+                author_relevance[author] = 0
+        
+        print(f"Ground truth: {len(author_relevance)} authors with relevance scores")
+        print(f"Authors with relevance > 0: {sum(1 for v in author_relevance.values() if v > 0)}")
+        
+        # Define top-k relevant authors based on relevance scores
+        # These are our "ground truth" relevant authors
+        sorted_by_relevance = sorted(author_relevance.items(), key=lambda x: x[1], reverse=True)
+        
+        # Compute rankings for all methods
+        methods = {
+            'Degree Centrality': dict(self.G.in_degree()),
+            'Relevance Score Only': author_relevance,
+            'Standard PageRank': self.compute_pagerank(use_content_weights=False),
+            'HITS (Authority)': self.compute_hits()[0],
+            'CW-PR (Ours)': self.compute_pagerank(use_content_weights=True)
+        }
+        
+        results = []
+        
+        for method_name, scores in methods.items():
+            print(f"\nEvaluating: {method_name}")
+            
+            # Filter to authors only and sort by score
+            author_scores = {n: scores.get(n, 0) for n in authors}
+            ranked_authors = sorted(author_scores.items(), key=lambda x: x[1], reverse=True)
+            
+            for k in k_values:
+                # Get top-k from this method
+                top_k_authors = [author for author, _ in ranked_authors[:k]]
+                
+                # Get top-k from ground truth (relevant authors)
+                relevant_k_authors = {author for author, _ in sorted_by_relevance[:k]}
+                
+                # Compute Precision@k
+                # How many of the top-k are actually in the relevant set?
+                precision_k = len(set(top_k_authors) & relevant_k_authors) / k
+                
+                # Compute nDCG@k
+                # DCG = sum of (relevance / log2(rank+1)) for ranked items
+                dcg = 0
+                for rank, author in enumerate(top_k_authors, start=1):
+                    relevance = author_relevance.get(author, 0)
+                    dcg += relevance / np.log2(rank + 1)
+                
+                # Ideal DCG: best possible ranking by relevance
+                ideal_ranking = [author for author, _ in sorted_by_relevance[:k]]
+                idcg = 0
+                for rank, author in enumerate(ideal_ranking, start=1):
+                    relevance = author_relevance.get(author, 0)
+                    idcg += relevance / np.log2(rank + 1)
+                
+                # nDCG
+                ndcg_k = dcg / idcg if idcg > 0 else 0
+                
+                results.append({
+                    'Method': method_name,
+                    'k': k,
+                    'Precision': precision_k,
+                    'nDCG': ndcg_k
+                })
+                
+                print(f"  P@{k}: {precision_k:.3f}, nDCG@{k}: {ndcg_k:.3f}")
+        
+        # Create results dataframe
+        results_df = pd.DataFrame(results)
+        
+        # Pivot to get the format needed for the paper
+        pivot_df = results_df.pivot(index='Method', columns='k')
+        
+        # Flatten column names
+        pivot_df.columns = [f'{metric}@{k}' for metric, k in pivot_df.columns]
+        pivot_df = pivot_df.reset_index()
+        
+        # Reorder columns
+        col_order = ['Method']
+        for k in k_values:
+            col_order.extend([f'Precision@{k}', f'nDCG@{k}'])
+        pivot_df = pivot_df[col_order]
+        
+        # Rename columns for paper
+        rename_map = {}
+        for k in k_values:
+            rename_map[f'Precision@{k}'] = f'P@{k}'
+            rename_map[f'nDCG@{k}'] = f'nDCG@{k}'
+        pivot_df = pivot_df.rename(columns=rename_map)
+        
+        return pivot_df
 
 
 def main():
     """Main execution function."""
     # Set paths
-    data_dir = Path(__file__).parent.parent / 'data' / 'processed'
-    figures_dir = Path(__file__).parent.parent / 'term_paper' / 'figures'
+    crawler_root = Path(__file__).parent.parent.parent  # Go up 3 levels
+    data_dir = crawler_root / "data" / "processed"
+    figures_dir = Path(__file__).parent.parent / "figures"  # term_paper/figures
     
     nodes_file = data_dir / 'nodes.csv'
     edges_file = data_dir / 'edges.csv'
@@ -445,6 +585,31 @@ def main():
     
     comparison_df.to_csv(output_dir / 'method_comparison.csv', index=False)
     print(f"\nResults saved to {output_dir}/method_comparison.csv")
+    
+    # Evaluate ranking quality with real metrics
+    evaluation_df = cwpr.evaluate_ranking_quality(k_values=[10, 20])
+    
+    print("\n" + "="*60)
+    print("Ranking Performance Evaluation")
+    print("="*60)
+    print(evaluation_df.to_string(index=False))
+    
+    # Save evaluation metrics
+    evaluation_df.to_csv(output_dir / 'evaluation_metrics.csv', index=False)
+    print(f"\nEvaluation metrics saved to {output_dir}/evaluation_metrics.csv")
+    
+    # Print LaTeX table format (manual formatting to avoid jinja2 dependency)
+    print("\n" + "="*60)
+    print("LaTeX Table Format (for paper)")
+    print("="*60)
+    print("\\begin{tabular}{lcccc}")
+    print("\\toprule")
+    print("Method & P@10 & P@20 & nDCG@10 & nDCG@20 \\\\")
+    print("\\midrule")
+    for _, row in evaluation_df.iterrows():
+        print(f"{row['Method']} & {row['P@10']:.2f} & {row['P@20']:.2f} & {row['nDCG@10']:.2f} & {row['nDCG@20']:.2f} \\\\")
+    print("\\bottomrule")
+    print("\\end{tabular}")
     
     # Plot score distribution
     figures_dir.mkdir(parents=True, exist_ok=True)
