@@ -1,0 +1,4700 @@
+[
+  {
+    "text": "Tesla",
+    "type": "ORGANIZATION",
+    "frequency": 293,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "US",
+    "type": "LOCATION",
+    "frequency": 113,
+    "avg_confidence": 0.8945132743362832
+  },
+  {
+    "text": "Leaf",
+    "type": "PRODUCT",
+    "frequency": 83,
+    "avg_confidence": 0.9971084337349398
+  },
+  {
+    "text": "Honda",
+    "type": "ORGANIZATION",
+    "frequency": 49,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "Kia",
+    "type": "ORGANIZATION",
+    "frequency": 40,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "China",
+    "type": "LOCATION",
+    "frequency": 39,
+    "avg_confidence": 0.998974358974359
+  },
+  {
+    "text": "Hyundai",
+    "type": "ORGANIZATION",
+    "frequency": 34,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "Nissan",
+    "type": "ORGANIZATION",
+    "frequency": 34,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "CHAdeMO",
+    "type": "TECHNOLOGY",
+    "frequency": 32,
+    "avg_confidence": 0.9733333333333334
+  },
+  {
+    "text": "L2",
+    "type": "PRODUCT",
+    "frequency": 31,
+    "avg_confidence": 0.5433333333333334
+  },
+  {
+    "text": "DCFC",
+    "type": "TECHNOLOGY",
+    "frequency": 30,
+    "avg_confidence": 0.9733333333333334
+  },
+  {
+    "text": "Gogoro",
+    "type": "ORGANIZATION",
+    "frequency": 25,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "EV6",
+    "type": "PRODUCT",
+    "frequency": 24,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "Model 3",
+    "type": "PRODUCT",
+    "frequency": 23,
+    "avg_confidence": 0.9965217391304348
+  },
+  {
+    "text": "USA",
+    "type": "LOCATION",
+    "frequency": 23,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "Model Y",
+    "type": "PRODUCT",
+    "frequency": 23,
+    "avg_confidence": 0.9965217391304348
+  },
+  {
+    "text": "GM",
+    "type": "ORGANIZATION",
+    "frequency": 22,
+    "avg_confidence": 0.9500000000000001
+  },
+  {
+    "text": "India",
+    "type": "LOCATION",
+    "frequency": 21,
+    "avg_confidence": 0.9961904761904763
+  },
+  {
+    "text": "Ford",
+    "type": "ORGANIZATION",
+    "frequency": 20,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "BMW",
+    "type": "ORGANIZATION",
+    "frequency": 18,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "Ioniq 5",
+    "type": "PRODUCT",
+    "frequency": 18,
+    "avg_confidence": 0.9970370370370369
+  },
+  {
+    "text": "CCS",
+    "type": "TECHNOLOGY",
+    "frequency": 17,
+    "avg_confidence": 0.9733333333333334
+  },
+  {
+    "text": "NIO",
+    "type": "ORGANIZATION",
+    "frequency": 16,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "Rivian",
+    "type": "ORGANIZATION",
+    "frequency": 16,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "Toyota",
+    "type": "ORGANIZATION",
+    "frequency": 15,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "regen",
+    "type": "TECHNOLOGY",
+    "frequency": 15,
+    "avg_confidence": 0.9733333333333334
+  },
+  {
+    "text": "California",
+    "type": "LOCATION",
+    "frequency": 15,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "500kW",
+    "type": "TECHNOLOGY",
+    "frequency": 14,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "Google",
+    "type": "ORGANIZATION",
+    "frequency": 13,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "supercharger",
+    "type": "ORGANIZATION",
+    "frequency": 13,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "BYD",
+    "type": "ORGANIZATION",
+    "frequency": 13,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "NACS",
+    "type": "TECHNOLOGY",
+    "frequency": 13,
+    "avg_confidence": 0.9430769230769231
+  },
+  {
+    "text": "Mercedes",
+    "type": "ORGANIZATION",
+    "frequency": 13,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "FSD",
+    "type": "TECHNOLOGY",
+    "frequency": 12,
+    "avg_confidence": 0.9733333333333333
+  },
+  {
+    "text": "3 miles",
+    "type": "TECHNOLOGY",
+    "frequency": 12,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "200 miles",
+    "type": "TECHNOLOGY",
+    "frequency": 11,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "Ioniq 6",
+    "type": "PRODUCT",
+    "frequency": 11,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "Stellantis",
+    "type": "ORGANIZATION",
+    "frequency": 11,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "Japan",
+    "type": "LOCATION",
+    "frequency": 10,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "cruise",
+    "type": "ORGANIZATION",
+    "frequency": 10,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "250kW",
+    "type": "TECHNOLOGY",
+    "frequency": 10,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "500 miles",
+    "type": "TECHNOLOGY",
+    "frequency": 10,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "Q2",
+    "type": "PRODUCT",
+    "frequency": 10,
+    "avg_confidence": 0.5433333333333334
+  },
+  {
+    "text": "Smart Disputes",
+    "type": "PERSON",
+    "frequency": 9,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "polestar",
+    "type": "ORGANIZATION",
+    "frequency": 9,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "20 miles",
+    "type": "TECHNOLOGY",
+    "frequency": 9,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "150 kw",
+    "type": "TECHNOLOGY",
+    "frequency": 9,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "ariya",
+    "type": "PRODUCT",
+    "frequency": 9,
+    "avg_confidence": 0.9985185185185185
+  },
+  {
+    "text": "CATL",
+    "type": "ORGANIZATION",
+    "frequency": 8,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "Chevrolet",
+    "type": "ORGANIZATION",
+    "frequency": 8,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "400 miles",
+    "type": "TECHNOLOGY",
+    "frequency": 8,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "300 miles",
+    "type": "TECHNOLOGY",
+    "frequency": 8,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "UK",
+    "type": "LOCATION",
+    "frequency": 8,
+    "avg_confidence": 0.9100000000000001
+  },
+  {
+    "text": "Volvo",
+    "type": "ORGANIZATION",
+    "frequency": 8,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "Canada",
+    "type": "LOCATION",
+    "frequency": 8,
+    "avg_confidence": 0.995
+  },
+  {
+    "text": "amazon",
+    "type": "ORGANIZATION",
+    "frequency": 8,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "Mach-E",
+    "type": "PRODUCT",
+    "frequency": 8,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "Norway",
+    "type": "LOCATION",
+    "frequency": 8,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "i4",
+    "type": "PRODUCT",
+    "frequency": 8,
+    "avg_confidence": 0.9179166666666667
+  },
+  {
+    "text": "Cybertruck",
+    "type": "PRODUCT",
+    "frequency": 8,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "Australia",
+    "type": "LOCATION",
+    "frequency": 7,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "XPeng",
+    "type": "ORGANIZATION",
+    "frequency": 7,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "Germany",
+    "type": "LOCATION",
+    "frequency": 7,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "100 miles",
+    "type": "TECHNOLOGY",
+    "frequency": 7,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "level 2 charging",
+    "type": "TECHNOLOGY",
+    "frequency": 7,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "1200 miles",
+    "type": "TECHNOLOGY",
+    "frequency": 7,
+    "avg_confidence": 0.6300000000000001
+  },
+  {
+    "text": "L1",
+    "type": "PRODUCT",
+    "frequency": 7,
+    "avg_confidence": 0.5433333333333334
+  },
+  {
+    "text": "AC charging",
+    "type": "TECHNOLOGY",
+    "frequency": 7,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "Porsche",
+    "type": "ORGANIZATION",
+    "frequency": 6,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "Android Auto",
+    "type": "PERSON",
+    "frequency": 6,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "600 miles",
+    "type": "TECHNOLOGY",
+    "frequency": 6,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "Bolt EUV",
+    "type": "PRODUCT",
+    "frequency": 6,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "Apple",
+    "type": "ORGANIZATION",
+    "frequency": 6,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "000 miles",
+    "type": "TECHNOLOGY",
+    "frequency": 6,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "2kw",
+    "type": "TECHNOLOGY",
+    "frequency": 6,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "Texas",
+    "type": "LOCATION",
+    "frequency": 6,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "60 miles",
+    "type": "TECHNOLOGY",
+    "frequency": 5,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "Q4",
+    "type": "PRODUCT",
+    "frequency": 5,
+    "avg_confidence": 0.5433333333333334
+  },
+  {
+    "text": "2 miles",
+    "type": "TECHNOLOGY",
+    "frequency": 5,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "South Korea",
+    "type": "LOCATION",
+    "frequency": 5,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "Q3",
+    "type": "PRODUCT",
+    "frequency": 5,
+    "avg_confidence": 0.5433333333333334
+  },
+  {
+    "text": "LFP",
+    "type": "TECHNOLOGY",
+    "frequency": 5,
+    "avg_confidence": 0.9733333333333334
+  },
+  {
+    "text": "Shanghai",
+    "type": "LOCATION",
+    "frequency": 5,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "200 kW",
+    "type": "TECHNOLOGY",
+    "frequency": 5,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "in Europe",
+    "type": "LOCATION",
+    "frequency": 5,
+    "avg_confidence": 0.5666666666666667
+  },
+  {
+    "text": "Fisker",
+    "type": "ORGANIZATION",
+    "frequency": 5,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "350 kw",
+    "type": "TECHNOLOGY",
+    "frequency": 5,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "Mustang Mach-E",
+    "type": "PRODUCT",
+    "frequency": 5,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "VW",
+    "type": "ORGANIZATION",
+    "frequency": 5,
+    "avg_confidence": 0.95
+  },
+  {
+    "text": "150KW",
+    "type": "TECHNOLOGY",
+    "frequency": 5,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "400kw",
+    "type": "TECHNOLOGY",
+    "frequency": 5,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "CCS1",
+    "type": "TECHNOLOGY",
+    "frequency": 5,
+    "avg_confidence": 0.9733333333333334
+  },
+  {
+    "text": "Uber",
+    "type": "ORGANIZATION",
+    "frequency": 4,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "Persona Injection",
+    "type": "PERSON",
+    "frequency": 4,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "United States",
+    "type": "LOCATION",
+    "frequency": 4,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "Ola Electric",
+    "type": "ORGANIZATION",
+    "frequency": 4,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "Activa EV",
+    "type": "PRODUCT",
+    "frequency": 4,
+    "avg_confidence": 0.6433333333333334
+  },
+  {
+    "text": "Chinese EV",
+    "type": "PRODUCT",
+    "frequency": 4,
+    "avg_confidence": 0.6933333333333335
+  },
+  {
+    "text": "300 mile",
+    "type": "METRIC",
+    "frequency": 4,
+    "avg_confidence": 0.54
+  },
+  {
+    "text": "50 miles",
+    "type": "TECHNOLOGY",
+    "frequency": 4,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "France",
+    "type": "LOCATION",
+    "frequency": 4,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "i5",
+    "type": "PRODUCT",
+    "frequency": 4,
+    "avg_confidence": 0.8991666666666667
+  },
+  {
+    "text": "350kW",
+    "type": "TECHNOLOGY",
+    "frequency": 4,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "Bay Area",
+    "type": "PERSON",
+    "frequency": 4,
+    "avg_confidence": 0.6833333333333333
+  },
+  {
+    "text": "Subaru",
+    "type": "ORGANIZATION",
+    "frequency": 4,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "E2008",
+    "type": "PRODUCT",
+    "frequency": 4,
+    "avg_confidence": 0.6433333333333334
+  },
+  {
+    "text": "EV9",
+    "type": "PRODUCT",
+    "frequency": 4,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "1000km",
+    "type": "METRIC",
+    "frequency": 4,
+    "avg_confidence": 0.54
+  },
+  {
+    "text": "200kw",
+    "type": "TECHNOLOGY",
+    "frequency": 4,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "80 mph",
+    "type": "METRIC",
+    "frequency": 4,
+    "avg_confidence": 0.54
+  },
+  {
+    "text": "500 mile",
+    "type": "METRIC",
+    "frequency": 4,
+    "avg_confidence": 0.54
+  },
+  {
+    "text": "10 miles",
+    "type": "TECHNOLOGY",
+    "frequency": 4,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "5 kW",
+    "type": "TECHNOLOGY",
+    "frequency": 4,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "Elon Musk",
+    "type": "PERSON",
+    "frequency": 4,
+    "avg_confidence": 0.6833333333333333
+  },
+  {
+    "text": "in April",
+    "type": "LOCATION",
+    "frequency": 3,
+    "avg_confidence": 0.5666666666666667
+  },
+  {
+    "text": "Apache Spark",
+    "type": "PERSON",
+    "frequency": 3,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "8 miles",
+    "type": "TECHNOLOGY",
+    "frequency": 3,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "J1772",
+    "type": "PRODUCT",
+    "frequency": 3,
+    "avg_confidence": 0.6433333333333334
+  },
+  {
+    "text": "Audi",
+    "type": "ORGANIZATION",
+    "frequency": 3,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "semi",
+    "type": "PRODUCT",
+    "frequency": 3,
+    "avg_confidence": 0.9866666666666667
+  },
+  {
+    "text": "thermal management",
+    "type": "TECHNOLOGY",
+    "frequency": 3,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "SU7",
+    "type": "PRODUCT",
+    "frequency": 3,
+    "avg_confidence": 0.6433333333333334
+  },
+  {
+    "text": "YU7",
+    "type": "PRODUCT",
+    "frequency": 3,
+    "avg_confidence": 0.6433333333333334
+  },
+  {
+    "text": "Volkswagen",
+    "type": "ORGANIZATION",
+    "frequency": 3,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "Chevy Bolt",
+    "type": "PERSON",
+    "frequency": 3,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "50 kW",
+    "type": "TECHNOLOGY",
+    "frequency": 3,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "regenerative braking",
+    "type": "TECHNOLOGY",
+    "frequency": 3,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "100 kWh",
+    "type": "TECHNOLOGY",
+    "frequency": 3,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "Beijing",
+    "type": "LOCATION",
+    "frequency": 3,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "Baby Taxi",
+    "type": "PERSON",
+    "frequency": 3,
+    "avg_confidence": 0.6833333333333332
+  },
+  {
+    "text": "7kw",
+    "type": "TECHNOLOGY",
+    "frequency": 3,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "Model S",
+    "type": "PRODUCT",
+    "frequency": 3,
+    "avg_confidence": 0.9955555555555556
+  },
+  {
+    "text": "100 kW",
+    "type": "TECHNOLOGY",
+    "frequency": 3,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "BZ4X",
+    "type": "PRODUCT",
+    "frequency": 3,
+    "avg_confidence": 0.6433333333333334
+  },
+  {
+    "text": "Mammoth Lakes",
+    "type": "PERSON",
+    "frequency": 3,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Sonora Rd",
+    "type": "PERSON",
+    "frequency": 3,
+    "avg_confidence": 0.6833333333333332
+  },
+  {
+    "text": "80 miles",
+    "type": "TECHNOLOGY",
+    "frequency": 3,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "30 miles",
+    "type": "TECHNOLOGY",
+    "frequency": 3,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "in Korea",
+    "type": "LOCATION",
+    "frequency": 3,
+    "avg_confidence": 0.5666666666666667
+  },
+  {
+    "text": "DC fast charging",
+    "type": "TECHNOLOGY",
+    "frequency": 3,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "miles per kWh",
+    "type": "TECHNOLOGY",
+    "frequency": 3,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "Washington",
+    "type": "LOCATION",
+    "frequency": 3,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "55 kW charging",
+    "type": "TECHNOLOGY",
+    "frequency": 3,
+    "avg_confidence": 0.6566666666666667
+  },
+  {
+    "text": "130kW",
+    "type": "TECHNOLOGY",
+    "frequency": 3,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "1000 km",
+    "type": "METRIC",
+    "frequency": 3,
+    "avg_confidence": 0.54
+  },
+  {
+    "text": "22KW",
+    "type": "TECHNOLOGY",
+    "frequency": 3,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "300kw",
+    "type": "TECHNOLOGY",
+    "frequency": 3,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "1000kW",
+    "type": "TECHNOLOGY",
+    "frequency": 3,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "The EV",
+    "type": "PRODUCT",
+    "frequency": 3,
+    "avg_confidence": 0.6433333333333334
+  },
+  {
+    "text": "silverado EV",
+    "type": "PRODUCT",
+    "frequency": 3,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "L3",
+    "type": "PRODUCT",
+    "frequency": 3,
+    "avg_confidence": 0.5433333333333334
+  },
+  {
+    "text": "550 mile",
+    "type": "METRIC",
+    "frequency": 3,
+    "avg_confidence": 0.54
+  },
+  {
+    "text": "EVGo",
+    "type": "ORGANIZATION",
+    "frequency": 3,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "Ohio",
+    "type": "LOCATION",
+    "frequency": 3,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "Electrify America",
+    "type": "ORGANIZATION",
+    "frequency": 3,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "North America",
+    "type": "PERSON",
+    "frequency": 3,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Portland",
+    "type": "LOCATION",
+    "frequency": 3,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "R1T",
+    "type": "PRODUCT",
+    "frequency": 3,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "4kW",
+    "type": "TECHNOLOGY",
+    "frequency": 3,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "EV1",
+    "type": "PRODUCT",
+    "frequency": 3,
+    "avg_confidence": 0.6433333333333334
+  },
+  {
+    "text": "M3",
+    "type": "PRODUCT",
+    "frequency": 3,
+    "avg_confidence": 0.5433333333333334
+  },
+  {
+    "text": "F150",
+    "type": "PRODUCT",
+    "frequency": 3,
+    "avg_confidence": 0.6433333333333334
+  },
+  {
+    "text": "to Elasticsearch",
+    "type": "LOCATION",
+    "frequency": 2,
+    "avg_confidence": 0.6166666666666667
+  },
+  {
+    "text": "in June",
+    "type": "LOCATION",
+    "frequency": 2,
+    "avg_confidence": 0.5666666666666667
+  },
+  {
+    "text": "1mi",
+    "type": "TECHNOLOGY",
+    "frequency": 2,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "Los Angeles",
+    "type": "LOCATION",
+    "frequency": 2,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "5 kWh",
+    "type": "TECHNOLOGY",
+    "frequency": 2,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "Mobile Power Pack",
+    "type": "PERSON",
+    "frequency": 2,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "in Taiwan",
+    "type": "LOCATION",
+    "frequency": 2,
+    "avg_confidence": 0.5666666666666667
+  },
+  {
+    "text": "100km",
+    "type": "METRIC",
+    "frequency": 2,
+    "avg_confidence": 0.54
+  },
+  {
+    "text": "Ola",
+    "type": "ORGANIZATION",
+    "frequency": 2,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "S1",
+    "type": "PRODUCT",
+    "frequency": 2,
+    "avg_confidence": 0.5433333333333334
+  },
+  {
+    "text": "P7",
+    "type": "PRODUCT",
+    "frequency": 2,
+    "avg_confidence": 0.9366666666666668
+  },
+  {
+    "text": "Geely",
+    "type": "ORGANIZATION",
+    "frequency": 2,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "40KWH",
+    "type": "TECHNOLOGY",
+    "frequency": 2,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "Spark EV",
+    "type": "PRODUCT",
+    "frequency": 2,
+    "avg_confidence": 0.6433333333333334
+  },
+  {
+    "text": "Li-ion",
+    "type": "TECHNOLOGY",
+    "frequency": 2,
+    "avg_confidence": 0.9733333333333334
+  },
+  {
+    "text": "General Questions",
+    "type": "PERSON",
+    "frequency": 2,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "mi/kWh",
+    "type": "TECHNOLOGY",
+    "frequency": 2,
+    "avg_confidence": 0.9733333333333334
+  },
+  {
+    "text": "100 kW charger",
+    "type": "TECHNOLOGY",
+    "frequency": 2,
+    "avg_confidence": 0.6566666666666667
+  },
+  {
+    "text": "500 kWh battery",
+    "type": "TECHNOLOGY",
+    "frequency": 2,
+    "avg_confidence": 0.6566666666666667
+  },
+  {
+    "text": "ZS EV",
+    "type": "PRODUCT",
+    "frequency": 2,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "11kw",
+    "type": "TECHNOLOGY",
+    "frequency": 2,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "ET7",
+    "type": "PRODUCT",
+    "frequency": 2,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "ultra-fast charging",
+    "type": "TECHNOLOGY",
+    "frequency": 2,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "Roadster",
+    "type": "PRODUCT",
+    "frequency": 2,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "700 miles",
+    "type": "TECHNOLOGY",
+    "frequency": 2,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "156hp",
+    "type": "TECHNOLOGY",
+    "frequency": 2,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "Central Asia",
+    "type": "PERSON",
+    "frequency": 2,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "220kW",
+    "type": "TECHNOLOGY",
+    "frequency": 2,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "9 miles",
+    "type": "TECHNOLOGY",
+    "frequency": 2,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "Blazer EV",
+    "type": "PRODUCT",
+    "frequency": 2,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "280 miles",
+    "type": "TECHNOLOGY",
+    "frequency": 2,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "Sentry Mode",
+    "type": "PERSON",
+    "frequency": 2,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Supercharging",
+    "type": "TECHNOLOGY",
+    "frequency": 2,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "E208",
+    "type": "PRODUCT",
+    "frequency": 2,
+    "avg_confidence": 0.6433333333333334
+  },
+  {
+    "text": "1000 miles",
+    "type": "TECHNOLOGY",
+    "frequency": 2,
+    "avg_confidence": 0.6300000000000001
+  },
+  {
+    "text": "Equinox EV",
+    "type": "PRODUCT",
+    "frequency": 2,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "400 kW",
+    "type": "TECHNOLOGY",
+    "frequency": 2,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "44 mile",
+    "type": "METRIC",
+    "frequency": 2,
+    "avg_confidence": 0.54
+  },
+  {
+    "text": "in November",
+    "type": "LOCATION",
+    "frequency": 2,
+    "avg_confidence": 0.6166666666666667
+  },
+  {
+    "text": "25 miles",
+    "type": "TECHNOLOGY",
+    "frequency": 2,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "250 kW charging",
+    "type": "TECHNOLOGY",
+    "frequency": 2,
+    "avg_confidence": 0.6566666666666667
+  },
+  {
+    "text": "250 kW",
+    "type": "TECHNOLOGY",
+    "frequency": 2,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "100kW",
+    "type": "TECHNOLOGY",
+    "frequency": 2,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "40 kWh",
+    "type": "TECHNOLOGY",
+    "frequency": 2,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "V3",
+    "type": "PRODUCT",
+    "frequency": 2,
+    "avg_confidence": 0.5433333333333334
+  },
+  {
+    "text": "130 km",
+    "type": "METRIC",
+    "frequency": 2,
+    "avg_confidence": 0.54
+  },
+  {
+    "text": "70KW",
+    "type": "TECHNOLOGY",
+    "frequency": 2,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "Cadillac Vistiq",
+    "type": "PERSON",
+    "frequency": 2,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "100kwh",
+    "type": "TECHNOLOGY",
+    "frequency": 2,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "150kw charging",
+    "type": "TECHNOLOGY",
+    "frequency": 2,
+    "avg_confidence": 0.6566666666666667
+  },
+  {
+    "text": "Ionity",
+    "type": "ORGANIZATION",
+    "frequency": 2,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "When EV",
+    "type": "PRODUCT",
+    "frequency": 2,
+    "avg_confidence": 0.6433333333333334
+  },
+  {
+    "text": "350kW charger",
+    "type": "TECHNOLOGY",
+    "frequency": 2,
+    "avg_confidence": 0.6566666666666667
+  },
+  {
+    "text": "620 miles",
+    "type": "TECHNOLOGY",
+    "frequency": 2,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "50kW",
+    "type": "TECHNOLOGY",
+    "frequency": 2,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "50KWH",
+    "type": "TECHNOLOGY",
+    "frequency": 2,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "80 kw",
+    "type": "TECHNOLOGY",
+    "frequency": 2,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "lyriq",
+    "type": "PRODUCT",
+    "frequency": 2,
+    "avg_confidence": 0.9933333333333334
+  },
+  {
+    "text": "220 miles",
+    "type": "TECHNOLOGY",
+    "frequency": 2,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "taycan",
+    "type": "PRODUCT",
+    "frequency": 2,
+    "avg_confidence": 0.9933333333333334
+  },
+  {
+    "text": "700 mile",
+    "type": "METRIC",
+    "frequency": 2,
+    "avg_confidence": 0.54
+  },
+  {
+    "text": "at Costco",
+    "type": "LOCATION",
+    "frequency": 2,
+    "avg_confidence": 0.5666666666666667
+  },
+  {
+    "text": "67kw",
+    "type": "TECHNOLOGY",
+    "frequency": 2,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "550 miles",
+    "type": "TECHNOLOGY",
+    "frequency": 2,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "Michigan",
+    "type": "LOCATION",
+    "frequency": 2,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "350 miles",
+    "type": "TECHNOLOGY",
+    "frequency": 2,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "Most EV",
+    "type": "PRODUCT",
+    "frequency": 2,
+    "avg_confidence": 0.6433333333333334
+  },
+  {
+    "text": "chargepoint",
+    "type": "ORGANIZATION",
+    "frequency": 2,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "Lyft",
+    "type": "ORGANIZATION",
+    "frequency": 2,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "niro ev",
+    "type": "PRODUCT",
+    "frequency": 2,
+    "avg_confidence": 0.9933333333333334
+  },
+  {
+    "text": "Kona EV",
+    "type": "PRODUCT",
+    "frequency": 2,
+    "avg_confidence": 0.6433333333333334
+  },
+  {
+    "text": "GMC",
+    "type": "ORGANIZATION",
+    "frequency": 2,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "EV tax credit",
+    "type": "POLICY",
+    "frequency": 2,
+    "avg_confidence": 0.9966666666666668
+  },
+  {
+    "text": "RAV4",
+    "type": "PRODUCT",
+    "frequency": 2,
+    "avg_confidence": 0.6433333333333334
+  },
+  {
+    "text": "40 miles",
+    "type": "TECHNOLOGY",
+    "frequency": 2,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "Whole Foods",
+    "type": "PERSON",
+    "frequency": 2,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Florida",
+    "type": "LOCATION",
+    "frequency": 2,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "5 miles",
+    "type": "TECHNOLOGY",
+    "frequency": 2,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "Pacific Northwest",
+    "type": "PERSON",
+    "frequency": 2,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "2 kW",
+    "type": "TECHNOLOGY",
+    "frequency": 2,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "Pitch Black",
+    "type": "PERSON",
+    "frequency": 2,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "750kW",
+    "type": "TECHNOLOGY",
+    "frequency": 2,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "to Drive",
+    "type": "LOCATION",
+    "frequency": 2,
+    "avg_confidence": 0.5666666666666667
+  },
+  {
+    "text": "to Seoul",
+    "type": "LOCATION",
+    "frequency": 2,
+    "avg_confidence": 0.5666666666666667
+  },
+  {
+    "text": "Skip Elasticsearch",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Build Fast Full",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Text Search Right",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Supabase\nMany",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Managing Fleet Costs",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Lessons Learned",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Small Operator\nHello",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Dev Smith \nFleet",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "The Stripe",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Resurrected My Dead",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Hacker News",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Primordial Soup\nHello",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "from Brisbane",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.6166666666666667
+  },
+  {
+    "text": "The Hacker News",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "from Firebase",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.6166666666666667
+  },
+  {
+    "text": "to Firestore",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.6166666666666667
+  },
+  {
+    "text": "Share What You",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Working On\nTons",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Launched\nLink",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "As Simon Williamson",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Edge Cases Every",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Developer Should Understand",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Federal Shutdown Means",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "More Grants Won",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Be Reviewed This",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Cycle\nFederal Shutdown",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Means More",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Grants Won",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Be Reviewed",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Flights\nMy",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "An Apache Spark",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Simulator Using",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "The Need",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.6833333333333333
+  },
+  {
+    "text": "Why We Must",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Unify Agentic Frameworks",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "The Vision",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Cognitrail\nMy",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Why This Matters",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "The Problem",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Compare Mode",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "The Method",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "The Results\nThe",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Persona Emergence",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Contextual Rebirth",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Narrative Integration",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Conclusion\nMy",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "The Tactician",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "in Russian",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.6166666666666667
+  },
+  {
+    "text": "Northrop Grumman",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Developer Portfolio Inspiration",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "V12",
+    "type": "PRODUCT",
+    "frequency": 1,
+    "avg_confidence": 0.6433333333333334
+  },
+  {
+    "text": "Electric Unicycle",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "35 mph",
+    "type": "METRIC",
+    "frequency": 1,
+    "avg_confidence": 0.54
+  },
+  {
+    "text": "80mi",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "8 mile",
+    "type": "METRIC",
+    "frequency": 1,
+    "avg_confidence": 0.54
+  },
+  {
+    "text": "My EV",
+    "type": "PRODUCT",
+    "frequency": 1,
+    "avg_confidence": 0.6433333333333334
+  },
+  {
+    "text": "24mph",
+    "type": "METRIC",
+    "frequency": 1,
+    "avg_confidence": 0.54
+  },
+  {
+    "text": "30mi",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "Chevy Blazer",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "5 mi",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "An Italian",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Fiat Panda",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Upcoming Electrify Expo",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Electrify Expo",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "San Pedro",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.6833333333333333
+  },
+  {
+    "text": "Mercedes-Benz",
+    "type": "ORGANIZATION",
+    "frequency": 1,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "How Viable Is",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Battery Swapping Technology",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Heavy Electric Vehicles",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Like Trucks",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Key Launches",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Strategic Opportunities",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Bengaluru",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "QC1",
+    "type": "PRODUCT",
+    "frequency": 1,
+    "avg_confidence": 0.6433333333333334
+  },
+  {
+    "text": "TVs",
+    "type": "ORGANIZATION",
+    "frequency": 1,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "Market Potential",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Electric Vehicles News",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "The Financial Express",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "6 miles",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "Swapping Scooter",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Battery Swapping Gains",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Other Japanese Manufacturers",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "While Gachaco",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "HERO",
+    "type": "ORGANIZATION",
+    "frequency": 1,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "The Role",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.6833333333333333
+  },
+  {
+    "text": "Home Charging",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Strategic Evolution",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Henry Chiang",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "In Taiwan",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.6833333333333333
+  },
+  {
+    "text": "to Gachaco",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.6166666666666667
+  },
+  {
+    "text": "30km",
+    "type": "METRIC",
+    "frequency": 1,
+    "avg_confidence": 0.54
+  },
+  {
+    "text": "Ozotec Flio",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Ather",
+    "type": "ORGANIZATION",
+    "frequency": 1,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "in Tamil",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.5666666666666667
+  },
+  {
+    "text": "Electric Scooter Deliveries",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Electric Scooters",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "The Range Includes",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Eight Models",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Varying Battery Packs",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Features Like Increased",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Wuling Motors",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Munich",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "10 mile",
+    "type": "METRIC",
+    "frequency": 1,
+    "avg_confidence": 0.54
+  },
+  {
+    "text": "solid-state",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "solid-state battery",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "24 kWh battery",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.6566666666666667
+  },
+  {
+    "text": "40 kW",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "24kWh",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "Expands Battery Swap",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Concept Image",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Solar Array Charging",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "You Click",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.6833333333333333
+  },
+  {
+    "text": "Freshly Charged",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Mini Vans",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.6833333333333333
+  },
+  {
+    "text": "Large Trucks",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Gas Stations",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Solar Arrays",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Big Corp",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.6833333333333333
+  },
+  {
+    "text": "in Society",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.6166666666666667
+  },
+  {
+    "text": "Exxon, BP",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.6433333333333334
+  },
+  {
+    "text": "From Energy",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Lithium Ion",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "to Lower",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.5666666666666667
+  },
+  {
+    "text": "200 mile",
+    "type": "METRIC",
+    "frequency": 1,
+    "avg_confidence": 0.54
+  },
+  {
+    "text": "NCA",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.9733333333333334
+  },
+  {
+    "text": "Lithium Iron Phosphate",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "Applying EV",
+    "type": "PRODUCT",
+    "frequency": 1,
+    "avg_confidence": 0.6933333333333335
+  },
+  {
+    "text": "in Madrid",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.5666666666666667
+  },
+  {
+    "text": "Second EV",
+    "type": "PRODUCT",
+    "frequency": 1,
+    "avg_confidence": 0.6433333333333334
+  },
+  {
+    "text": "Battery Swaps Are",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Time EV",
+    "type": "PRODUCT",
+    "frequency": 1,
+    "avg_confidence": 0.6433333333333334
+  },
+  {
+    "text": "Purchasing Advice",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "The Starting Line",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Better Route Planner",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "70 mph",
+    "type": "METRIC",
+    "frequency": 1,
+    "avg_confidence": 0.54
+  },
+  {
+    "text": "Full Self-Driving",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "J3400",
+    "type": "PRODUCT",
+    "frequency": 1,
+    "avg_confidence": 0.6433333333333334
+  },
+  {
+    "text": "350 kW charger",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.6566666666666667
+  },
+  {
+    "text": "Newyork Subway",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "London",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "Paris",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "From Moscow",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "to Mexico",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.5666666666666667
+  },
+  {
+    "text": "in Shenzen",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.6166666666666667
+  },
+  {
+    "text": "60 kWh battery",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.6566666666666667
+  },
+  {
+    "text": "40,000 km",
+    "type": "METRIC",
+    "frequency": 1,
+    "avg_confidence": 0.54
+  },
+  {
+    "text": "11,000 km",
+    "type": "METRIC",
+    "frequency": 1,
+    "avg_confidence": 0.54
+  },
+  {
+    "text": "300 kW",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "75 kW",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "N700",
+    "type": "PRODUCT",
+    "frequency": 1,
+    "avg_confidence": 0.6433333333333334
+  },
+  {
+    "text": "080 kW",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "12 kW",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "200 mph",
+    "type": "METRIC",
+    "frequency": 1,
+    "avg_confidence": 0.54
+  },
+  {
+    "text": "100 mph",
+    "type": "METRIC",
+    "frequency": 1,
+    "avg_confidence": 0.54
+  },
+  {
+    "text": "720 kW",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "95 kW",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "Launches Standardized Battery",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Swap Packs",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Heavy Trucks",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Standardize Bangladesh",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "to Dhaka",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.5666666666666667
+  },
+  {
+    "text": "i3",
+    "type": "PRODUCT",
+    "frequency": 1,
+    "avg_confidence": 0.8866666666666667
+  },
+  {
+    "text": "380 km",
+    "type": "METRIC",
+    "frequency": 1,
+    "avg_confidence": 0.54
+  },
+  {
+    "text": "120 km",
+    "type": "METRIC",
+    "frequency": 1,
+    "avg_confidence": 0.54
+  },
+  {
+    "text": "200 kw charger",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.6566666666666667
+  },
+  {
+    "text": "25,000km",
+    "type": "METRIC",
+    "frequency": 1,
+    "avg_confidence": 0.54
+  },
+  {
+    "text": "400miles",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "244km",
+    "type": "METRIC",
+    "frequency": 1,
+    "avg_confidence": 0.54
+  },
+  {
+    "text": "263km",
+    "type": "METRIC",
+    "frequency": 1,
+    "avg_confidence": 0.54
+  },
+  {
+    "text": "New EV",
+    "type": "PRODUCT",
+    "frequency": 1,
+    "avg_confidence": 0.6433333333333334
+  },
+  {
+    "text": "Battery Swapping Stations",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Factory Tour",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Decoupled Staging",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Battery Swap Demo",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "42.1 kWh battery",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.6566666666666667
+  },
+  {
+    "text": "420 km",
+    "type": "METRIC",
+    "frequency": 1,
+    "avg_confidence": 0.54
+  },
+  {
+    "text": "Charging Speeds Compared",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "With Lotus",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Middle East",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "The State",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.6833333333333333
+  },
+  {
+    "text": "Talking Cars",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Consumer Reports",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "My Versa",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.6833333333333333
+  },
+  {
+    "text": "F-150 Lightning",
+    "type": "PRODUCT",
+    "frequency": 1,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "in Wisconsin",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.6166666666666667
+  },
+  {
+    "text": "Autopilot",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.9733333333333334
+  },
+  {
+    "text": "Asked Panelists",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Federal Road Taxes",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Radiators Hidden",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Top EV",
+    "type": "PRODUCT",
+    "frequency": 1,
+    "avg_confidence": 0.6433333333333334
+  },
+  {
+    "text": "iX",
+    "type": "PRODUCT",
+    "frequency": 1,
+    "avg_confidence": 0.8866666666666667
+  },
+  {
+    "text": "Mostly No",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.6833333333333333
+  },
+  {
+    "text": "Will Insurance Remain",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Discuss Battery Swapping",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Heavy Trucks\nHi",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Piyush Goyal",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Bowie, MD",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.6433333333333334
+  },
+  {
+    "text": "24kWh battery",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.6566666666666667
+  },
+  {
+    "text": "160mi",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "164 mi",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "EQE350",
+    "type": "PRODUCT",
+    "frequency": 1,
+    "avg_confidence": 0.6433333333333334
+  },
+  {
+    "text": "XC60",
+    "type": "PRODUCT",
+    "frequency": 1,
+    "avg_confidence": 0.6433333333333334
+  },
+  {
+    "text": "in England",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.6166666666666667
+  },
+  {
+    "text": "18kWh",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "Tipping Point",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Or Are We",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.6833333333333333
+  },
+  {
+    "text": "Wirelessly Charging Your",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "But Is It",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.6833333333333333
+  },
+  {
+    "text": "406 km",
+    "type": "METRIC",
+    "frequency": 1,
+    "avg_confidence": 0.54
+  },
+  {
+    "text": "WLTP range",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "11 kW",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "51 kWh battery",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.6566666666666667
+  },
+  {
+    "text": "56 kW",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "1000kW charging",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.6566666666666667
+  },
+  {
+    "text": "Bolt EV",
+    "type": "PRODUCT",
+    "frequency": 1,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "7 kWh",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "90 miles",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "From Switzerland",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "to Kazahstan",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.6166666666666667
+  },
+  {
+    "text": "ETP3",
+    "type": "PRODUCT",
+    "frequency": 1,
+    "avg_confidence": 0.6433333333333334
+  },
+  {
+    "text": "from Zurich",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.6166666666666667
+  },
+  {
+    "text": "Temporary Import Docs",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Central Asian",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "BP Pulse",
+    "type": "ORGANIZATION",
+    "frequency": 1,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "250kW charging",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.6566666666666667
+  },
+  {
+    "text": "to Brittany",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.6166666666666667
+  },
+  {
+    "text": "550 km",
+    "type": "METRIC",
+    "frequency": 1,
+    "avg_confidence": 0.54
+  },
+  {
+    "text": "in Brittany",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.6166666666666667
+  },
+  {
+    "text": "50 kw charger",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.6566666666666667
+  },
+  {
+    "text": "4 mi",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "54 kw",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "1 mi",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "to Sonora",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.5666666666666667
+  },
+  {
+    "text": "25 mi",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "2400 mile",
+    "type": "METRIC",
+    "frequency": 1,
+    "avg_confidence": 0.54
+  },
+  {
+    "text": "Charge Technology",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Simplify Public",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Purchasing Advice Thread",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Clean Vehicle Provisions",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Inflation Reduction Act",
+    "type": "POLICY",
+    "frequency": 1,
+    "avg_confidence": 0.9966666666666668
+  },
+  {
+    "text": "Dealer Markup Tracking",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "General Resources",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Electric Cars",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "City Life",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.6833333333333333
+  },
+  {
+    "text": "from Korea",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.6166666666666667
+  },
+  {
+    "text": "UTF8",
+    "type": "PRODUCT",
+    "frequency": 1,
+    "avg_confidence": 0.6433333333333334
+  },
+  {
+    "text": "Come Close",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "CCS2",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.9733333333333334
+  },
+  {
+    "text": "30kWh",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "30 kWh",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "Good Afternoon",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "LV2",
+    "type": "PRODUCT",
+    "frequency": 1,
+    "avg_confidence": 0.6433333333333334
+  },
+  {
+    "text": "in August",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.5666666666666667
+  },
+  {
+    "text": "12 miles",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "Opel Vivaro",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "One Battery Promises",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "More Range And",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Faster Charging In",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Smaller Package",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Shipping Worth It",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Range Anxiety\nFound",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Performance Pack",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Phoenix",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "in Chicago",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.6166666666666667
+  },
+  {
+    "text": "Macon, GA",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.6433333333333334
+  },
+  {
+    "text": "Million EV",
+    "type": "PRODUCT",
+    "frequency": 1,
+    "avg_confidence": 0.6933333333333335
+  },
+  {
+    "text": "Fast Charging Program",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "in October",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.6166666666666667
+  },
+  {
+    "text": "Jeep Avenger",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "136hp",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "Android Automotive",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Opel Mokka",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "The Alfa Junior",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "The Alfa Tonale",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "in Montreal",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.6166666666666667
+  },
+  {
+    "text": "to Firefly",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.6166666666666667
+  },
+  {
+    "text": "Optima Sportswagon",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "C5",
+    "type": "PRODUCT",
+    "frequency": 1,
+    "avg_confidence": 0.5433333333333334
+  },
+  {
+    "text": "Renault Scenic",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "The Mach",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.6833333333333333
+  },
+  {
+    "text": "ID.4",
+    "type": "PRODUCT",
+    "frequency": 1,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "50 mph",
+    "type": "METRIC",
+    "frequency": 1,
+    "avg_confidence": 0.54
+  },
+  {
+    "text": "1500 miles",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.6300000000000001
+  },
+  {
+    "text": "in Sonoma",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.5666666666666667
+  },
+  {
+    "text": "in Mammoth",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.6166666666666667
+  },
+  {
+    "text": "Oregon",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "V8",
+    "type": "PRODUCT",
+    "frequency": 1,
+    "avg_confidence": 0.5433333333333334
+  },
+  {
+    "text": "22mph",
+    "type": "METRIC",
+    "frequency": 1,
+    "avg_confidence": 0.54
+  },
+  {
+    "text": "O2",
+    "type": "PRODUCT",
+    "frequency": 1,
+    "avg_confidence": 0.5433333333333334
+  },
+  {
+    "text": "1000 kW",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "50 kWh",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "500 kW",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "The Sam",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.6833333333333333
+  },
+  {
+    "text": "1 miles",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "Going EV",
+    "type": "PRODUCT",
+    "frequency": 1,
+    "avg_confidence": 0.6433333333333334
+  },
+  {
+    "text": "100 kWh battery",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.6566666666666667
+  },
+  {
+    "text": "75 kWh",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "IONIQ6",
+    "type": "PRODUCT",
+    "frequency": 1,
+    "avg_confidence": 0.6433333333333334
+  },
+  {
+    "text": "Sierra EV",
+    "type": "PRODUCT",
+    "frequency": 1,
+    "avg_confidence": 0.6433333333333334
+  },
+  {
+    "text": "60kWh battery",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.6566666666666667
+  },
+  {
+    "text": "125kW",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "350 km",
+    "type": "METRIC",
+    "frequency": 1,
+    "avg_confidence": 0.54
+  },
+  {
+    "text": "450 kW",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "270 kW",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "10KW",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "80KW",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "I6",
+    "type": "PRODUCT",
+    "frequency": 1,
+    "avg_confidence": 0.5433333333333334
+  },
+  {
+    "text": "e-tron",
+    "type": "PRODUCT",
+    "frequency": 1,
+    "avg_confidence": 0.9866666666666667
+  },
+  {
+    "text": "200kw charging",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.6566666666666667
+  },
+  {
+    "text": "180kw charging",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.6566666666666667
+  },
+  {
+    "text": "280kw charging",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.6566666666666667
+  },
+  {
+    "text": "Oslo",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "Model Ses",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.6833333333333333
+  },
+  {
+    "text": "220kW charging",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.6566666666666667
+  },
+  {
+    "text": "250 mile",
+    "type": "METRIC",
+    "frequency": 1,
+    "avg_confidence": 0.54
+  },
+  {
+    "text": "22 kW",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "500 kW charging",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.6566666666666667
+  },
+  {
+    "text": "360kw",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "1400 km",
+    "type": "METRIC",
+    "frequency": 1,
+    "avg_confidence": 0.54
+  },
+  {
+    "text": "An EV",
+    "type": "PRODUCT",
+    "frequency": 1,
+    "avg_confidence": 0.6433333333333334
+  },
+  {
+    "text": "Burger King",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "GV60",
+    "type": "PRODUCT",
+    "frequency": 1,
+    "avg_confidence": 0.6433333333333334
+  },
+  {
+    "text": "500kW charging",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.6566666666666667
+  },
+  {
+    "text": "72KWH",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "560 miles",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "For Road Trips",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "11kw charger",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.6566666666666667
+  },
+  {
+    "text": "80 kwh",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "80kw charging",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.6566666666666667
+  },
+  {
+    "text": "My Camaro",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.6833333333333333
+  },
+  {
+    "text": "Cadillac Lyriq",
+    "type": "PRODUCT",
+    "frequency": 1,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "Long Range",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "110 miles",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "3 mi",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "430 miles",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "143 kwh",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "Chevy Silverado",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Albany, NY",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.6933333333333335
+  },
+  {
+    "text": "Schroon Lake",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Panera Bread",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "North Hudson",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Saugerties, NY",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.6933333333333335
+  },
+  {
+    "text": "Out Of Spec",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Cannonball Run",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "230kW",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "90kwh",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "130km",
+    "type": "METRIC",
+    "frequency": 1,
+    "avg_confidence": 0.54
+  },
+  {
+    "text": "75kwh",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "250kWh",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "180kW",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "And Bjorn",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.6833333333333333
+  },
+  {
+    "text": "120kw",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "90kw",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "That Guy",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.6833333333333333
+  },
+  {
+    "text": "70 kW",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "in Bolts",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.5666666666666667
+  },
+  {
+    "text": "60kW",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "320kW",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "150 kW charging",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.6566666666666667
+  },
+  {
+    "text": "V2",
+    "type": "PRODUCT",
+    "frequency": 1,
+    "avg_confidence": 0.5433333333333334
+  },
+  {
+    "text": "San Diego",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.6833333333333333
+  },
+  {
+    "text": "240 miles",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "Lucid Gravity",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "6kW",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "50 kW charging",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.6566666666666667
+  },
+  {
+    "text": "400 kW charging",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.6566666666666667
+  },
+  {
+    "text": "200 kwh battery",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.6566666666666667
+  },
+  {
+    "text": "180 kW",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "28kwh battery",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.6566666666666667
+  },
+  {
+    "text": "Ioniq EV",
+    "type": "PRODUCT",
+    "frequency": 1,
+    "avg_confidence": 0.6433333333333334
+  },
+  {
+    "text": "450 mile",
+    "type": "METRIC",
+    "frequency": 1,
+    "avg_confidence": 0.54
+  },
+  {
+    "text": "620 mile",
+    "type": "METRIC",
+    "frequency": 1,
+    "avg_confidence": 0.54
+  },
+  {
+    "text": "iX3",
+    "type": "PRODUCT",
+    "frequency": 1,
+    "avg_confidence": 0.9866666666666667
+  },
+  {
+    "text": "5000 miles",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.6300000000000001
+  },
+  {
+    "text": "heat pump",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.9733333333333334
+  },
+  {
+    "text": "880km",
+    "type": "METRIC",
+    "frequency": 1,
+    "avg_confidence": 0.54
+  },
+  {
+    "text": "477km",
+    "type": "METRIC",
+    "frequency": 1,
+    "avg_confidence": 0.54
+  },
+  {
+    "text": "296miles",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "Every EV",
+    "type": "PRODUCT",
+    "frequency": 1,
+    "avg_confidence": 0.6433333333333334
+  },
+  {
+    "text": "50km",
+    "type": "METRIC",
+    "frequency": 1,
+    "avg_confidence": 0.54
+  },
+  {
+    "text": "to Boston",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.5666666666666667
+  },
+  {
+    "text": "at Plugshare",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.6166666666666667
+  },
+  {
+    "text": "230 miles",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "184 miles",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "147 miles",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "150 miles",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "The Silverado",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "250 miles",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "New Zealand",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "M3LR",
+    "type": "PRODUCT",
+    "frequency": 1,
+    "avg_confidence": 0.6433333333333334
+  },
+  {
+    "text": "In Europe",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.6833333333333333
+  },
+  {
+    "text": "97 kW",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "1100 mile",
+    "type": "METRIC",
+    "frequency": 1,
+    "avg_confidence": 0.54
+  },
+  {
+    "text": "40 kWh battery",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.6566666666666667
+  },
+  {
+    "text": "20km",
+    "type": "METRIC",
+    "frequency": 1,
+    "avg_confidence": 0.54
+  },
+  {
+    "text": "V2V",
+    "type": "PRODUCT",
+    "frequency": 1,
+    "avg_confidence": 0.6433333333333334
+  },
+  {
+    "text": "Arizona",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "Waffle House",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "450 miles",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "from Indiana",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.6166666666666667
+  },
+  {
+    "text": "Colorado",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "150 mile",
+    "type": "METRIC",
+    "frequency": 1,
+    "avg_confidence": 0.54
+  },
+  {
+    "text": "Twin Peaks",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "It Handles Poorly",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Snowy Conditions",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Magic Dock",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "A2ZEV",
+    "type": "PRODUCT",
+    "frequency": 1,
+    "avg_confidence": 0.6433333333333334
+  },
+  {
+    "text": "to Teslas",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.5666666666666667
+  },
+  {
+    "text": "Jesus Christ",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Denver",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "150mi",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "at Level",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.5666666666666667
+  },
+  {
+    "text": "Time Machine",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "32 miles",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "Type 2",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.9733333333333334
+  },
+  {
+    "text": "75 miles",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "Also, DM",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.6433333333333334
+  },
+  {
+    "text": "Christ, OP",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.6933333333333335
+  },
+  {
+    "text": "200mi",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "Pilot Flying",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Buick Enclaves",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "What Car Should",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Mazda",
+    "type": "ORGANIZATION",
+    "frequency": 1,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "Camry, CX",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.6433333333333334
+  },
+  {
+    "text": "emissions standards",
+    "type": "POLICY",
+    "frequency": 1,
+    "avg_confidence": 0.6033333333333334
+  },
+  {
+    "text": "in Alabama",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.6166666666666667
+  },
+  {
+    "text": "in Massachusetts",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.6166666666666667
+  },
+  {
+    "text": "Bad Thing",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.6833333333333333
+  },
+  {
+    "text": "West Coast",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "in Nov",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.5666666666666667
+  },
+  {
+    "text": "3miles",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "Autonomous May",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Wan Gang",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.6833333333333333
+  },
+  {
+    "text": "In December",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "John Deere",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "to Chicago",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.6166666666666667
+  },
+  {
+    "text": "at Darcars",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.6166666666666667
+  },
+  {
+    "text": "Alfa Guilia Quadrifoglio",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Lucid Air",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.6833333333333333
+  },
+  {
+    "text": "XB7",
+    "type": "PRODUCT",
+    "frequency": 1,
+    "avg_confidence": 0.6433333333333334
+  },
+  {
+    "text": "X7M",
+    "type": "PRODUCT",
+    "frequency": 1,
+    "avg_confidence": 0.6433333333333334
+  },
+  {
+    "text": "RSQ8",
+    "type": "PRODUCT",
+    "frequency": 1,
+    "avg_confidence": 0.6433333333333334
+  },
+  {
+    "text": "2500 miles",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.6300000000000001
+  },
+  {
+    "text": "Orange Man",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "CO2",
+    "type": "PRODUCT",
+    "frequency": 1,
+    "avg_confidence": 0.6433333333333334
+  },
+  {
+    "text": "autonomous",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.6300000000000001
+  },
+  {
+    "text": "In Alaska",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.6833333333333333
+  },
+  {
+    "text": "Big Bend",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.6833333333333333
+  },
+  {
+    "text": "in Ukraine",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.6166666666666667
+  },
+  {
+    "text": "Dirty Harry",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Model X",
+    "type": "PRODUCT",
+    "frequency": 1,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "Chevy Malibu",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Pep Boys",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.6833333333333333
+  },
+  {
+    "text": "50 mile",
+    "type": "METRIC",
+    "frequency": 1,
+    "avg_confidence": 0.54
+  },
+  {
+    "text": "National Forrest",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Theodore Rosevelt National",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "More EV",
+    "type": "PRODUCT",
+    "frequency": 1,
+    "avg_confidence": 0.6433333333333334
+  },
+  {
+    "text": "9000 miles",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.6300000000000001
+  },
+  {
+    "text": "from Hertz",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.6166666666666667
+  },
+  {
+    "text": "Congestion Pricing",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "in Arkansas",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.6166666666666667
+  },
+  {
+    "text": "Cox Automotive",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "New England",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "50miles",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "300mi",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "Santa Monica",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Yes, EA",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.6433333333333334
+  },
+  {
+    "text": "Bronco Sport",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "to Cox",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.5666666666666667
+  },
+  {
+    "text": "X6",
+    "type": "PRODUCT",
+    "frequency": 1,
+    "avg_confidence": 0.5433333333333334
+  },
+  {
+    "text": "in America",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.6166666666666667
+  },
+  {
+    "text": "in Maryland",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.6166666666666667
+  },
+  {
+    "text": "to Maryland",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.6166666666666667
+  },
+  {
+    "text": "Rust Belt",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.6833333333333333
+  },
+  {
+    "text": "60mph",
+    "type": "METRIC",
+    "frequency": 1,
+    "avg_confidence": 0.54
+  },
+  {
+    "text": "4493 miles",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.6300000000000001
+  },
+  {
+    "text": "600mi",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "600 mile",
+    "type": "METRIC",
+    "frequency": 1,
+    "avg_confidence": 0.54
+  },
+  {
+    "text": "28 mph",
+    "type": "METRIC",
+    "frequency": 1,
+    "avg_confidence": 0.54
+  },
+  {
+    "text": "29 miles",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "3 kWh",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "7 miles",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "5km",
+    "type": "METRIC",
+    "frequency": 1,
+    "avg_confidence": 0.54
+  },
+  {
+    "text": "Used EV",
+    "type": "PRODUCT",
+    "frequency": 1,
+    "avg_confidence": 0.6433333333333334
+  },
+  {
+    "text": "315 kWh",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "120 miles",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "Stella Terra",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Eindhoven University",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "635 km",
+    "type": "METRIC",
+    "frequency": 1,
+    "avg_confidence": 0.54
+  },
+  {
+    "text": "20 kW",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "5.25km",
+    "type": "METRIC",
+    "frequency": 1,
+    "avg_confidence": 0.54
+  },
+  {
+    "text": "18km",
+    "type": "METRIC",
+    "frequency": 1,
+    "avg_confidence": 0.54
+  },
+  {
+    "text": "200 kWh",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "44kW",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "1 mile",
+    "type": "METRIC",
+    "frequency": 1,
+    "avg_confidence": 0.54
+  },
+  {
+    "text": "In Cali",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.6833333333333333
+  },
+  {
+    "text": "1kW",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "in Antarctica",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.6166666666666667
+  },
+  {
+    "text": "72kW",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "detroit",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.9600000000000001
+  },
+  {
+    "text": "Wallbox Pulsar Plus",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Too Spartan",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "So Dealerships",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Did Grok",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.6833333333333333
+  },
+  {
+    "text": "The Chevy",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.6833333333333333
+  },
+  {
+    "text": "to Elon",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.5666666666666667
+  },
+  {
+    "text": "to Nazis",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.5666666666666667
+  },
+  {
+    "text": "PS5",
+    "type": "PRODUCT",
+    "frequency": 1,
+    "avg_confidence": 0.6433333333333334
+  },
+  {
+    "text": "480 hp",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "The Fords",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.6833333333333333
+  },
+  {
+    "text": "Lightning Lariat",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Lightning Pro",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Premier Redline",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "150kwh",
+    "type": "TECHNOLOGY",
+    "frequency": 1,
+    "avg_confidence": 0.5800000000000001
+  },
+  {
+    "text": "Q5",
+    "type": "PRODUCT",
+    "frequency": 1,
+    "avg_confidence": 0.5433333333333334
+  },
+  {
+    "text": "Push Button",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "to Trump",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.5666666666666667
+  },
+  {
+    "text": "Lmaoooooooo\n\nYou",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Plus Musk",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.6833333333333333
+  },
+  {
+    "text": "Which Chevy",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Berlin",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "from Toronto",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.6166666666666667
+  },
+  {
+    "text": "in February",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.6166666666666667
+  },
+  {
+    "text": "in March",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.5666666666666667
+  },
+  {
+    "text": "55mph",
+    "type": "METRIC",
+    "frequency": 1,
+    "avg_confidence": 0.54
+  },
+  {
+    "text": "General Motors",
+    "type": "ORGANIZATION",
+    "frequency": 1,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "North American",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "E41",
+    "type": "PRODUCT",
+    "frequency": 1,
+    "avg_confidence": 0.6433333333333334
+  },
+  {
+    "text": "What You",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.6833333333333333
+  },
+  {
+    "text": "Giving Up",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.6833333333333333
+  },
+  {
+    "text": "Lower Cost",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Poor Koreans",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "Sweden",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "Seagull",
+    "type": "PRODUCT",
+    "frequency": 1,
+    "avg_confidence": 1.0
+  },
+  {
+    "text": "Electric Trucker",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.7333333333333334
+  },
+  {
+    "text": "in Asia",
+    "type": "LOCATION",
+    "frequency": 1,
+    "avg_confidence": 0.5666666666666667
+  },
+  {
+    "text": "In Korea",
+    "type": "PERSON",
+    "frequency": 1,
+    "avg_confidence": 0.6833333333333333
+  }
+]

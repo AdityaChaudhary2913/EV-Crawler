@@ -1,0 +1,60 @@
+{
+  "US_POLICIES": [
+    "Inflation Reduction Act",
+    "IRA",
+    "$7500 tax credit",
+    "$7,500 credit",
+    "federal EV credit",
+    "Clean Vehicle Credit",
+    "EV tax credit",
+    "CAFE standards",
+    "Corporate Average Fuel Economy",
+    "EPA emissions standards",
+    "California ZEV mandate",
+    "Zero Emission Vehicle",
+    "ZEV",
+    "Advanced Technology Vehicle Manufacturing",
+    "ATVM"
+  ],
+  "INDIAN_POLICIES": [
+    "FAME",
+    "FAME-II",
+    "FAME India",
+    "Faster Adoption and Manufacturing of Electric Vehicles",
+    "PLI scheme",
+    "Production Linked Incentive",
+    "state EV subsidy",
+    "Delhi EV policy",
+    "Maharashtra EV policy",
+    "Gujarat EV policy",
+    "GST reduction",
+    "road tax exemption",
+    "registration fee waiver"
+  ],
+  "EUROPEAN_POLICIES": [
+    "EU Green Deal",
+    "Euro 7 standards",
+    "2035 ICE ban",
+    "combustion engine ban",
+    "CO2 emission targets",
+    "battery passport",
+    "Right to Repair"
+  ],
+  "CHINESE_POLICIES": [
+    "NEV mandate",
+    "New Energy Vehicle",
+    "dual-credit system",
+    "EV subsidy phase-out",
+    "Made in China 2025"
+  ],
+  "EMISSIONS_REGULATIONS": [
+    "carbon neutral",
+    "net zero",
+    "emission standards",
+    "tailpipe emissions",
+    "lifecycle emissions",
+    "carbon footprint",
+    "greenhouse gas",
+    "GHG emissions"
+  ]
+}

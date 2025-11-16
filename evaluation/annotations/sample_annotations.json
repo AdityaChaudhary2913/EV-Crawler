@@ -1,0 +1,18 @@
+{
+  "sample_id": "sample_1",
+  "text": "Tesla Model 3 has a 75 kWh battery and supports 250 kW DC fast charging using CCS2.",
+  "entities": [
+    {"text": "Tesla", "type": "ORGANIZATION", "start": 0, "end": 5},
+    {"text": "Model 3", "type": "PRODUCT", "start": 6, "end": 13},
+    {"text": "75 kWh battery", "type": "TECHNOLOGY", "start": 20, "end": 34},
+    {"text": "250 kW", "type": "TECHNOLOGY", "start": 48, "end": 54},
+    {"text": "DC fast charging", "type": "TECHNOLOGY", "start": 55, "end": 71},
+    {"text": "CCS2", "type": "TECHNOLOGY", "start": 78, "end": 82}
+  ],
+  "relations": [
+    {"subject": "Tesla", "predicate": "PRODUCES", "object": "Model 3"},
+    {"subject": "Model 3", "predicate": "HAS_FEATURE", "object": "75 kWh battery"},
+    {"subject": "Model 3", "predicate": "HAS_FEATURE", "object": "DC fast charging"},
+    {"subject": "Model 3", "predicate": "HAS_FEATURE", "object": "CCS2"}
+  ]
+}

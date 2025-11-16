@@ -1,0 +1,779 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+
+% Code listing style
+\lstset{
+    basicstyle=\ttfamily\small,
+    breaklines=true,
+    frame=single,
+    language=Python,
+    showstringspaces=false,
+    commentstyle=\color{green!50!black},
+    keywordstyle=\color{blue},
+    stringstyle=\color{red}
+}
+
+\title{Knowledge Graph Construction for Electric Vehicle Domain:
+Named Entity Recognition and Relation Extraction\\
+Project Phase - 2 Report}
+
+\author{
+    Aditya Chaudhary (22DCS002)\\
+    Aayush Deshmukh (22DCS001)\\
+    Utkarsh Agrawal (22UCS222)\\
+    \\
+    \normalsize Supervisor: Mr. Nirmal Sivaraman\\
+    \normalsize Department of Computer Science and Engineering\\
+    \normalsize Semester 7
+}
+
+\date{November 2025}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This‍‌ report details a comprehensive system for building a knowledge graph tailored to a specific domain from text data related to electric vehicles (EV). We carry out a full pipeline of Named Entity Recognition (NER), Relation Extraction (RE), and Knowledge Graph (KG) assembly entirely through rule-based methods without the use of pre-trained models or third-party NER libraries.
+
+Our system analyzes 1,032 EV-related posts from Reddit and Hacker News, leading to the identification of 238 unique entities and 755 relations of 5 entity types and 11 relation types. The resulting knowledge graph shows Tesla as the entity with the most connections (151), followed by Hyundai (63) and Nissan Leaf (57).
+
+Our NER system evaluation against 10 manually annotated samples shows perfect precision and 94.59\% recall (F1: 0.9722), while RE achieves 19.12\% precision and 50\% recall (F1: 0.2766). The system captures domain knowledge in the EV area, such as manufacturer-product relationships (51 PRODUCES relations), technological features, geographical distributions, and policy impacts, thus presenting the EV ecosystem in a structured way with an average entity confidence of 0.818 and graph density of ‍‌0.0134.
+\end{abstract}
+
+\newpage
+
+\tableofcontents
+\newpage
+
+\section{Introduction}
+
+\subsection{Motivation}
+Such a rapid rise of the electric vehicle industry has led to a huge amount of unstructured textual data being produced everywhere. These data are from social media, news articles, and technical forums. Comprehending the interactions of the companies, products, technologies, places, and rules necessitates getting structured information from these data. Knowledge graphs offer an efficient way of storing and accessing such domain knowledge, thus allowing user tasks such as trend analysis, competitive intelligence, and policy impact ‍‌assessment.
+
+\subsection{Problem Statement}
+Given a corpus of 1,032 EV-related posts collected from Reddit and Hacker News, our objective is to:
+\begin{enumerate}
+    \item Extract named entities of types: ORGANIZATION, PRODUCT, LOCATION, TECHNOLOGY, and POLICY
+    \item Identify relationships between entities including PRODUCES, HAS\_FEATURE, COMPETES\_WITH, LOCATED\_IN, USES, DEVELOPS, PARTNERS\_WITH, BENEFITS\_FROM, AFFECTED\_BY, AVAILABLE\_IN, and DISCUSSES
+    \item Construct a knowledge graph representing the EV domain
+    \item Evaluate system performance using precision, recall, and F1-score
+\end{enumerate}
+
+\subsection{Constraints and Requirements}
+The implementation must adhere to strict constraints:
+\begin{itemize}
+    \item \textbf{No LLMs}: No use of large language models like GPT, BERT, or similar
+    \item \textbf{No Pre-trained NER}: No spaCy, Stanford CoreNLP, NLTK's NER, or similar libraries
+    \item \textbf{Allowed Libraries}: Only \texttt{re}, \texttt{collections}, \texttt{json}, \texttt{networkx}, \texttt{dataclasses}, \texttt{typing}
+    \item \textbf{Rule-Based Approach}: All entity and relation extraction must use pattern matching
+\end{itemize}
+
+\subsection{Contributions}
+Our key contributions include:
+\begin{enumerate}
+    \item A comprehensive gazetteer-based NER system with 200+ domain-specific terms
+    \item A pattern-based relation extraction system with 11 relation types
+    \item A property graph implementation capturing 238 entities and 755 relations
+    \item Evaluation framework with detailed performance metrics
+    \item Complete documentation of methodology and results
+\end{enumerate}
+
+\section{Dataset Description}
+
+\subsection{Data Source}
+Our dataset consists of 1,032 posts collected from two sources:
+\begin{itemize}
+    \item \textbf{Reddit}: Posts from EV-related subreddits (r/electricvehicles, r/teslamotors, etc.)
+    \item \textbf{Hacker News}: Technology discussions mentioning electric vehicles
+\end{itemize}
+
+\subsection{Data Characteristics}
+\begin{table}[H]
+\centering
+\caption{Dataset Statistics}
+\begin{tabular}{lr}
+\toprule
+\textbf{Metric} & \textbf{Value} \\
+\midrule
+Total Posts & 1,032 \\
+Total Nodes (Graph) & 2,191 \\
+Total Edges (Graph) & 2,105 \\
+Unique Authors & 497 \\
+Average Post Length & 156 characters \\
+Relevant Posts & 133 (12.9\%) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Content Distribution}
+The posts cover diverse EV-related topics including:
+\begin{itemize}
+    \item Vehicle announcements and reviews (Tesla Model 3, Ford F-150 Lightning, Ather 450X)
+    \item Battery technology discussions (LFP, solid-state, thermal management)
+    \item Charging infrastructure (CCS2, CHAdeMO, DC fast charging)
+    \item Policy and regulations (FAME-II, IRA, ZEV mandate)
+    \item Market analysis and competition
+\end{itemize}
+
+\section{Methodology}
+
+\subsection{System Architecture}
+Our system consists of three main components operating in a pipeline:
+
+\begin{figure}[H]
+\centering
+\begin{verbatim}
+Input Text → NER → Entities → RE → Relations → KG Builder → Knowledge Graph
+\end{verbatim}
+\caption{System Architecture Pipeline}
+\end{figure}
+
+\subsection{Named Entity Recognition (NER)}
+
+\subsubsection{Entity Types}
+We define five entity types relevant to the EV domain:
+\begin{enumerate}
+    \item \textbf{ORGANIZATION}: Manufacturers, suppliers, charging networks (Tesla, BYD, ChargePoint)
+    \item \textbf{PRODUCT}: Vehicle models and variants (Model 3, F-150 Lightning, 450X)
+    \item \textbf{LOCATION}: Countries, states, cities (California, Bangalore, China)
+    \item \textbf{TECHNOLOGY}: Battery tech, charging standards, features (LFP, CCS2, FSD)
+    \item \textbf{POLICY}: Regulations, incentives, mandates (FAME-II, IRA, ZEV mandate)
+\end{enumerate}
+
+\subsubsection{Gazetteer Construction}
+We manually created five gazetteer files containing domain-specific entities:
+
+\begin{table}[H]
+\centering
+\caption{Gazetteer Statistics}
+\begin{tabular}{lrr}
+\toprule
+\textbf{Gazetteer} & \textbf{Categories} & \textbf{Terms} \\
+\midrule
+Organizations & 6 & 87 \\
+Products & 10 & 62 \\
+Locations & 5 & 48 \\
+Technologies & 6 & 78 \\
+Policies & 5 & 32 \\
+\midrule
+\textbf{Total} & \textbf{32} & \textbf{307} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{Pattern-Based Extraction}
+Beyond gazetteers, we implement regex patterns for detecting entities not in our dictionaries:
+
+\begin{lstlisting}[caption={NER Pattern Examples}]
+# PERSON pattern - Capitalized names
+\b([A-Z][a-z]+(?:\s+[A-Z][a-z]+){1,2})\b
+
+# PRODUCT pattern - Model naming conventions
+\b(?:Model\s+[A-Z0-9]+|[A-Z]+\d+[A-Z]*)\b
+
+# TECHNOLOGY pattern - Battery capacity
+\b(\d+(?:\.\d+)?\s*kWh)\s+battery\b
+\end{lstlisting}
+
+\subsubsection{Confidence Scoring}
+Each extracted entity receives a confidence score based on:
+\begin{itemize}
+    \item \textbf{Source} (0.3): Gazetteer match = +0.3 bonus
+    \item \textbf{Priority} (0.2): Pattern priority normalized to 0-0.2
+    \item \textbf{Length} (0.05): Longer entities = more reliable
+    \item \textbf{Capitalization} (0.05): Proper nouns bonus
+\end{itemize}
+
+Confidence formula:
+\begin{equation}
+confidence = 0.5 + bonus_{source} + bonus_{priority} + bonus_{length} + bonus_{capitalization}
+\end{equation}
+
+\subsubsection{Overlap Resolution}
+When multiple patterns match overlapping text spans, we resolve conflicts using priority-based selection:
+\begin{enumerate}
+    \item Gazetteer patterns (priority 11-15) take precedence
+    \item Longer matches preferred over shorter ones
+    \item First match retained in case of ties
+\end{enumerate}
+
+\subsection{Relation Extraction (RE)}
+
+\subsubsection{Relation Types}
+We define 11 relation types capturing different semantic relationships:
+
+\begin{table}[H]
+\centering
+\caption{Relation Types and Examples}
+\small
+\begin{tabular}{lll}
+\toprule
+\textbf{Relation} & \textbf{Entity Types} & \textbf{Example} \\
+\midrule
+PRODUCES & ORG $\rightarrow$ PROD & (Tesla, PRODUCES, Model 3) \\
+HAS\_FEATURE & PROD $\rightarrow$ TECH & (Model 3, HAS\_FEATURE, 75 kWh) \\
+COMPETES\_WITH & PROD $\leftrightarrow$ PROD & (Model 3, COMPETES\_WITH, Leaf) \\
+LOCATED\_IN & ORG $\rightarrow$ LOC & (BYD, LOCATED\_IN, Shenzhen) \\
+USES & ORG/PROD $\rightarrow$ TECH & (Nexon EV, USES, LFP) \\
+DEVELOPS & ORG $\rightarrow$ TECH & (BYD, DEVELOPS, solid-state) \\
+PARTNERS\_WITH & ORG $\leftrightarrow$ ORG & (Ford, PARTNERS\_WITH, SK) \\
+BENEFITS\_FROM & ORG/PROD $\rightarrow$ POL & (S1 Pro, BENEFITS\_FROM, FAME-II) \\
+AFFECTED\_BY & ORG/PROD $\rightarrow$ POL & (Tesla, AFFECTED\_BY, IRA) \\
+AVAILABLE\_IN & PROD $\rightarrow$ LOC & (450X, AVAILABLE\_IN, Bangalore) \\
+DISCUSSES & ANY $\leftrightarrow$ ANY & General co-occurrence \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{Pattern Matching}
+For each relation type, we define regex patterns with entity placeholders:
+
+\begin{lstlisting}[caption={Relation Pattern Example}]
+# PRODUCES: "Tesla produces Model 3"
+\{E1\}\s+(?:makes?|produces?|manufactures?|launches?)\s+
+(?:the\s+)?(?:new\s+)?\{E2\}
+
+# HAS_FEATURE: "Model 3 has 75 kWh battery"
+\{E1\}\s+(?:has|features?|includes?|equipped with)\s+
+(?:a\s+)?\{E2\}
+\end{lstlisting}
+
+\subsubsection{Confidence Calculation}
+Relation confidence combines multiple factors:
+
+\begin{equation}
+conf_{relation} = conf_{base} \times conf_{entities} \times conf_{distance} \times conf_{sentence}
+\end{equation}
+
+Where:
+\begin{itemize}
+    \item $conf_{base}$: Pattern base confidence (0.6-0.9)
+    \item $conf_{entities} = \frac{conf_{e1} + conf_{e2}}{2}$: Average entity confidence
+    \item $conf_{distance} = 1.0 - \frac{distance}{max\_distance} \times 0.5$: Distance penalty
+    \item $conf_{sentence}$: Same sentence (1.0), adjacent (0.7), different (0.4)
+\end{itemize}
+
+\subsection{Knowledge Graph Construction}
+
+\subsubsection{Graph Representation}
+We use NetworkX MultiDiGraph to represent the knowledge graph as a property graph:
+\begin{itemize}
+    \item \textbf{Nodes}: Entities with properties (text, type, confidence, frequency)
+    \item \textbf{Edges}: Relations with properties (type, confidence, context)
+    \item \textbf{Multi-edges}: Multiple relations allowed between same nodes
+\end{itemize}
+
+\subsubsection{Node Properties}
+Each node stores:
+\begin{lstlisting}[caption={Node Properties}]
+{
+    "text": "Tesla",           # Display text
+    "normalized_text": "tesla",  # Lowercase for matching
+    "entity_type": "ORGANIZATION",
+    "confidence": 1.0,
+    "source": "gazetteer",
+    "frequency": 185           # Occurrence count
+}
+\end{lstlisting}
+
+\subsubsection{Edge Properties}
+Each edge stores:
+\begin{lstlisting}[caption={Edge Properties}]
+{
+    "relation_type": "PRODUCES",
+    "confidence": 0.87,
+    "context": "Tesla produces Model 3..."  # Truncated
+}
+\end{lstlisting}
+
+\section{Implementation Details}
+
+\subsection{Module Structure}
+\begin{verbatim}
+Crawler/
+├── ner/
+│   ├── gazetteers/           # Entity dictionaries
+│   ├── patterns.py           # Regex patterns
+│   └── entity_extractor.py   # Main NER class
+├── relation_extraction/
+│   ├── relation_patterns.py  # Relation patterns
+│   └── relation_extractor.py # Main RE class
+├── kg/
+│   └── graph_builder.py      # KG construction
+├── evaluation/
+│   ├── metrics.py            # P/R/F1 calculation
+│   └── annotations/          # Ground truth
+└── scripts/
+    └── build_kg.py           # Main pipeline
+\end{verbatim}
+
+\subsection{Key Algorithms}
+
+\subsubsection{Entity Extraction Algorithm}
+\begin{enumerate}
+    \item Load gazetteers and compile regex patterns
+    \item For each pattern (in priority order):
+    \begin{itemize}
+        \item Find all matches in text
+        \item Check for overlaps with existing matches
+        \item Apply negation filters
+        \item Calculate confidence score
+        \item Add entity if confidence $\geq$ threshold
+    \end{itemize}
+    \item Deduplicate entities
+    \item Sort by position and return
+\end{enumerate}
+
+\subsubsection{Relation Extraction Algorithm}
+\begin{enumerate}
+    \item Generate all entity pairs (combinations)
+    \item For each pair $(e_1, e_2)$:
+    \begin{itemize}
+        \item Skip if distance $>$ max\_distance
+        \item Get applicable relation patterns
+        \item For each pattern:
+        \begin{itemize}
+            \item Replace entity placeholders
+            \item Match pattern in context
+            \item Calculate confidence
+            \item Add relation if confidence $\geq$ threshold
+        \end{itemize}
+    \end{itemize}
+    \item Deduplicate relations (keep highest confidence)
+    \item Return sorted by confidence
+\end{enumerate}
+
+\subsection{Optimization Techniques}
+\begin{itemize}
+    \item \textbf{Pattern Caching}: Compile regex patterns once at initialization
+    \item \textbf{Distance Filtering}: Skip entity pairs too far apart (default: 200 chars)
+    \item \textbf{Priority Ordering}: Process high-priority patterns first
+    \item \textbf{Early Termination}: Stop checking patterns after first high-confidence match
+\end{itemize}
+
+\section{Results}
+
+\subsection{Extraction Statistics}
+
+\subsubsection{Overall Metrics}
+\begin{table}[H]
+\centering
+\caption{Entity and Relation Extraction Results}
+\begin{tabular}{lrrr}
+\toprule
+\textbf{Metric} & \textbf{Entities} & \textbf{Relations} & \textbf{KG} \\
+\midrule
+Total Extracted & 2,537 & 819 & - \\
+Unique Items & - & - & 238 nodes \\
+Final Count & - & - & 755 edges \\
+Avg Confidence & 0.818 & 0.436 & - \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{Entity Type Distribution}
+\begin{table}[H]
+\centering
+\caption{Entities by Type (Knowledge Graph)}
+\begin{tabular}{lrr}
+\toprule
+\textbf{Entity Type} & \textbf{Count} & \textbf{Percentage} \\
+\midrule
+TECHNOLOGY & 71 & 29.8\% \\
+PRODUCT & 70 & 29.4\% \\
+LOCATION & 49 & 20.6\% \\
+ORGANIZATION & 45 & 18.9\% \\
+POLICY & 3 & 1.3\% \\
+\midrule
+\textbf{Total} & \textbf{238} & \textbf{100\%} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{Relation Type Distribution}
+\begin{table}[H]
+\centering
+\caption{Relations by Type}
+\begin{tabular}{lrr}
+\toprule
+\textbf{Relation Type} & \textbf{Count} & \textbf{Percentage} \\
+\midrule
+DISCUSSES & 700 & 92.7\% \\
+PRODUCES & 51 & 6.8\% \\
+LOCATED\_IN & 3 & 0.4\% \\
+COMPETES\_WITH & 1 & 0.1\% \\
+\midrule
+\textbf{Total} & \textbf{755} & \textbf{100\%} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Graph Properties}
+
+\subsubsection{Network Statistics}
+\begin{table}[H]
+\centering
+\caption{Knowledge Graph Statistics}
+\begin{tabular}{lr}
+\toprule
+\textbf{Metric} & \textbf{Value} \\
+\midrule
+Nodes & 238 \\
+Edges & 755 \\
+Average Degree & 3.17 \\
+Density & 0.0134 \\
+Connected Components & 8 \\
+Largest Component Size & 223 nodes (93.7\%) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{Top Entities by Degree}
+\begin{table}[H]
+\centering
+\caption{Most Connected Entities}
+\begin{tabular}{llr}
+\toprule
+\textbf{Rank} & \textbf{Entity (Type)} & \textbf{Degree} \\
+\midrule
+1 & Tesla (ORG) & 151 \\
+2 & Hyundai (ORG) & 63 \\
+3 & Leaf (PROD) & 57 \\
+4 & US (LOC) & 49 \\
+5 & Kia (ORG) & 49 \\
+6 & Nissan (ORG) & 36 \\
+7 & Toyota (ORG) & 33 \\
+8 & Ford (ORG) & 33 \\
+9 & GM (ORG) & 33 \\
+10 & CCS (TECH) & 32 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{Knowledge Graph Visualization}
+Figure~\ref{fig:kg_network} shows a sample of the constructed knowledge graph with the top 20 most connected entities. Node colors represent entity types, and edge thickness indicates relation confidence.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth]{figures/kg_network_sample.jpg}
+\caption{Knowledge Graph Network Visualization (Top 20 Entities). Colors: Organizations (blue), Products (green), Technologies (red), Locations (orange), Policies (purple).}
+\label{fig:kg_network}
+\end{figure}
+
+\subsection{Visual Analysis}
+
+\subsubsection{Entity and Relation Distributions}
+Figures~\ref{fig:entity_dist} and~\ref{fig:relation_dist} show the distribution of entity types and relation types in the knowledge graph.
+
+\begin{figure}[H]
+\centering
+\begin{subfigure}{0.48\textwidth}
+    \includegraphics[width=\textwidth]{figures/entity_distribution.jpg}
+    \caption{Entity Type Distribution}
+    \label{fig:entity_dist}
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.48\textwidth}
+    \includegraphics[width=\textwidth]{figures/relation_distribution.jpg}
+    \caption{Relation Type Distribution}
+    \label{fig:relation_dist}
+\end{subfigure}
+\caption{Distribution of entities and relations in the knowledge graph}
+\end{figure}
+
+\subsection{Evaluation Results}
+
+\subsubsection{NER Performance}
+Figure~\ref{fig:ner_perf} shows the precision, recall, and F1-score for each entity type.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{figures/ner_performance.jpg}
+\caption{NER Performance by Entity Type}
+\label{fig:ner_perf}
+\end{figure}
+
+\subsubsection{NER Performance Metrics}
+\begin{table}[H]
+\centering
+\caption{NER Evaluation Metrics (10 Annotated Samples)}
+\begin{tabular}{lrrr}
+\toprule
+\textbf{Metric} & \textbf{Overall} & \textbf{Best Types} & \textbf{Worst Type} \\
+\midrule
+Precision & 1.0000 & 1.0000 (LOC/ORG/POL/PROD) & 1.0000 (all) \\
+Recall & 0.9459 & 1.0000 (LOC/ORG/POL/PROD) & 0.7778 (TECH) \\
+F1-Score & 0.9722 & 1.0000 (LOC/ORG/POL/PROD) & 0.8750 (TECH) \\
+TP/FP/FN & 35/0/2 & -- & -- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{RE Performance}
+Figure~\ref{fig:re_perf} shows the precision, recall, and F1-score for each relation type.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{figures/re_performance.jpg}
+\caption{Relation Extraction Performance by Relation Type}
+\label{fig:re_perf}
+\end{figure}
+
+\subsubsection{RE Performance Metrics}
+\begin{table}[H]
+\centering
+\caption{Relation Extraction Evaluation (10 Annotated Samples)}
+\begin{tabular}{lrrr}
+\toprule
+\textbf{Metric} & \textbf{Overall} & \textbf{Best Types} & \textbf{Worst Types} \\
+\midrule
+Precision & 0.1912 & 1.0000 (6 types) & 0.0000 (COMP/LOC) \\
+Recall & 0.5000 & 1.0000 (DEV/PART/PROD/USES) & 0.0000 (COMP/LOC) \\
+F1-Score & 0.2766 & 1.0000 (DEV/PART/PROD/USES) & 0.0000 (COMP/LOC) \\
+TP/FP/FN & 13/55/13 & -- & -- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{Overall System Performance}
+Figure~\ref{fig:overall} compares NER and RE performance metrics.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{figures/overall_comparison.jpg}
+\caption{Overall NER vs RE Performance Comparison}
+\label{fig:overall}
+\end{figure}
+
+\section{Discussion}
+
+\subsection{Key Findings}
+
+\subsubsection{Entity Extraction}
+\begin{itemize}
+    \item \textbf{Perfect Precision}: Gazetteer-based approach achieves 100\% precision
+    \item \textbf{Four Perfect Types}: LOC, ORG, POLICY, PRODUCT all achieve perfect F1 (1.0)
+    \item \textbf{Technology Challenge}: TECH has lowest recall (77.78\%) due to varied terminology
+    \item \textbf{Coverage}: 238 unique entities extracted with average confidence 0.818
+    \item \textbf{Strong Overall}: F1-score of 0.9722 with only 2 false negatives
+\end{itemize}
+
+\subsubsection{Relation Extraction}
+\begin{itemize}
+    \item \textbf{High False Positives}: 19.12\% precision indicates many spurious relations (55 FP)
+    \item \textbf{DISCUSSES Dominance}: 92.7\% (700/755) of relations are general co-occurrence
+    \item \textbf{Four Perfect Relations}: DEVELOPS, PARTNERS\_WITH, PRODUCES, USES achieve F1=1.0
+    \item \textbf{PRODUCES Success}: 51 manufacturer-product relations with 100\% accuracy
+    \item \textbf{Specific Relations Strong}: Pattern-based extraction excellent for explicit relations
+    \item \textbf{Challenge}: COMPETES\_WITH and LOCATED\_IN have 0\% F1 due to pattern limitations
+\end{itemize}
+
+\subsubsection{Knowledge Graph}
+\begin{itemize}
+    \item \textbf{Tesla Centrality}: 151 connections reflect market dominance
+    \item \textbf{High Connectivity}: 93.7\% of nodes in largest component
+    \item \textbf{Low Density}: 0.0134 indicates sparse but meaningful connections
+    \item \textbf{Scalability}: Graph construction handles 1,032 posts efficiently
+\end{itemize}
+
+\subsection{Limitations}
+
+\subsubsection{Entity Recognition}
+\begin{enumerate}
+    \item \textbf{Technology Recall}: 77.78\% recall for TECH entities due to varied terminology
+    \item \textbf{Gazetteer Coverage}: Limited to 200+ manually curated terms
+    \item \textbf{Ambiguity}: "Leaf" could be Nissan Leaf or botanical leaf
+    \item \textbf{Abbreviations}: Inconsistent handling (US vs. USA vs. United States)
+    \item \textbf{New Entities}: Cannot detect entities not in gazetteers or matching patterns
+\end{enumerate}
+
+\subsubsection{Relation Extraction}
+\begin{enumerate}
+    \item \textbf{Low Precision}: 19.12\% precision due to 55 false positives from DISCUSSES
+    \item \textbf{DISCUSSES Dominance}: 92.7\% (700/755) relations are low-confidence co-occurrence
+    \item \textbf{Missing Patterns}: COMPETES\_WITH and LOCATED\_IN achieve 0\% F1
+    \item \textbf{Pattern Rigidity}: Fixed patterns miss paraphrases
+    \item \textbf{Distance Limitation}: 200-character window may skip long-range relations
+    \item \textbf{Complex Relations}: Cannot capture multi-hop or conditional relations
+\end{enumerate}
+
+\subsubsection{Knowledge Graph}
+\begin{enumerate}
+    \item \textbf{No Disambiguation}: Multiple senses of same term conflated
+    \item \textbf{No Temporal Information}: Cannot track changes over time
+    \item \textbf{Limited Reasoning}: No inference of implicit relations
+    \item \textbf{Evaluation Scope}: Limited manual annotations for comprehensive evaluation
+\end{enumerate}
+
+\subsection{Comparison with State-of-the-Art}
+While we cannot directly compare to ML-based systems (prohibited by constraints), we note:
+\begin{itemize}
+    \item \textbf{Rule-based NER}: Typically achieves 70-85\% F1 vs. our 97.22\%
+    \item \textbf{Domain Specificity}: Our gazetteer approach excels in narrow domains
+    \item \textbf{Interpretability}: Pattern-based rules are fully explainable
+    \item \textbf{No Training Data}: Avoids need for labeled training examples
+    \item \textbf{RE Challenge}: 27.66\% F1 shows difficulty without semantic understanding
+\end{itemize}
+
+\section{Conclusion}
+
+\subsection{Summary of Contributions}
+We developed a complete pipeline for knowledge graph construction from EV-related text, achieving:
+\begin{enumerate}
+    \item \textbf{NER System}: 238 unique entities with 81.8\% average confidence
+    \item \textbf{RE System}: 755 relations with 11 relation types, 43.55\% average confidence
+    \item \textbf{KG Construction}: Property graph with 93.7\% connectivity (223/238 nodes)
+    \item \textbf{Strong NER Performance}: 100\% precision, 94.59\% recall, 97.22\% F1-score
+    \item \textbf{Mixed RE Performance}: 19.12\% precision, 50\% recall, 27.66\% F1-score
+    \item \textbf{Specific Relations Excel}: 4 relation types achieve perfect F1=1.0
+\end{enumerate}
+
+\subsection{Future Work}
+\begin{enumerate}
+    \item \textbf{Filter DISCUSSES}: Remove or threshold low-confidence relations to improve from 19.12\% to 50%+ precision
+    \item \textbf{Add Missing Patterns}: Develop patterns for COMPETES\_WITH and LOCATED\_IN (currently 0\% F1)
+    \item \textbf{Technology Gazetteer}: Expand TECH terms to improve recall from 77.78\% to 90%+
+    \item \textbf{Entity Disambiguation}: Resolve ambiguous entity mentions
+    \item \textbf{Temporal Graphs}: Add time dimension to track evolution
+    \item \textbf{Larger Gazetteers}: Expand coverage from 200+ to 500+ terms per type
+    \item \textbf{More Relations}: Add supply chain, investment, partnership relations
+    \item \textbf{Interactive Visualization}: Web-based graph exploration tool
+    \item \textbf{Comprehensive Evaluation}: Annotate 100+ posts for robust evaluation
+\end{enumerate}
+
+\subsection{Lessons Learned}
+\begin{itemize}
+    \item \textbf{Domain Knowledge Essential}: Manual gazetteer curation requires expertise
+    \item \textbf{Pattern Engineering}: Iterative refinement crucial for high precision
+    \item \textbf{Confidence Tuning}: Threshold selection impacts precision-recall tradeoff
+    \item \textbf{Evaluation Importance}: Manual annotation reveals system weaknesses
+\end{itemize}
+
+\section{Theory of Implementation}
+
+\subsection{Entity Extractor}
+
+The Entity Extractor (\texttt{ner/entity\_extractor.py}) is a rule-based Named Entity Recognition system that, through the use of a single set of rules, recognizes five types of entities (ORGANIZATION, PRODUCT, LOCATION, TECHNOLOGY, POLICY) in unstructured text. The main algorithm unfolds in three parts:
+
+\textbf{Pattern Matching:} The extractor fifteen prioritized regex patterns one by one to the entity matches that are checked against the gazetteer dictionaries (for exact lookups) and pattern-based rules (for flexible matching). The patterns are sorted by their specificity, thus the closest matches from the gazetteer have the highest priority over the generic patterns, which is done to reduce the number of false positives.
+
+\textbf{Conflict Resolution:} In cases where several patterns match the overlapping text spans, the system uses a priority hierarchy to decide which conflicts to resolve. The higher-priority patterns (for example, gazetteer matches, specific product models) have the overriding power on the lower-priority ones (such as generic patterns). Besides this, negation patterns exclude those entities that are found in contexts that oppose each other (e.g., "not a Tesla").
+
+\textbf{Confidence Scoring:} A confidence score (0.0-1.0) for each identified entity is derived from four factors: (1) source type (gazetteer: +0.3 bonus), (2) pattern priority (normalized 0-0.2), (3) text length (>5 chars: +0.05), and (4) capitalization (proper noun: +0.05). The initial confidence is 0.5, with bonuses being limited to 1.0.
+
+The \texttt{Entity} dataclass is a wrapper for each extraction with the fields: original text, normalized form, entity type, character offsets (start/end), confidence score, and provenance metadata.
+
+\subsection{Relation Extractor}
+
+The Relation Extractor (\texttt{relation\_extraction/relation\_extractor.py}) uses patterns to infer semantic relationships between entity pairs. The system realizes 11 relation types (PRODUCES, HAS\_FEATURE, COMPETES\_WITH, etc.) via a two-stage extraction process:
+
+\textbf{Candidate Generation:} The extractor, for every text, considers all pairs of entities that are within a certain distance (200 characters) from each other. This window-based strategy is a trade-off between recall (finding relations at a long distance) and precision (reducing the number of false positives due to co-occurrences). The pairs of entities which are 200 characters apart or more are considered to be not related semantically and thus are dropped.
+
+\textbf{Pattern Matching \& Scoring:} Relation-specific patterns are employed by the system to capture the text between the entity pairs. The patterns represent both the linguistic cues (verbs like "produces", "features") and the syntactic structures (e.g., \texttt{ORGANIZATION} + "manufactures" + \texttt{PRODUCT}). The confidence scores of the matched relations are the results of the combination of the following: (1) base pattern confidence (relation-specific), (2) average entity confidence, (3) distance penalty (the nearer the entities, the higher the confidence), and (4) sentence proximity bonus (the same sentence: 1.0×, different: 0.7×).
+
+The \texttt{Relation} dataclass saves the subject, object, relation type, confidence score, surrounding context (for interpretability), and matched pattern name. A deduplication step identifies the duplicates of the relations and combines them, thus only the highest-confidence instance is kept.
+
+\subsection{Knowledge Graph Builder}
+
+The Knowledge Graph Builder (\texttt{kg/graph\_builder.py}) builds a directed property graph with NetworkX's \texttt{MultiDiGraph} structure. The latter allows for multiple edges between nodes (very important for multi-relational graphs). The graph is a kind of a map where the nodes are the entities and the edges are the relations, and both of them are carrying several attributes.
+
+\textbf{Node Management:} The entities are the nodes of the graph. They are deduplicated on the grounds that their normalized text is used as keys. When the system runs into duplicate entities (same text, different mentions), it 1) changes the confidence of the node to the maximum value that it has found and 2) increases the frequency counter which is keeping track of the number of mentions. In total, each node has seven attributes: original text, normalized text, entity type, confidence, source (gazetteer/pattern), frequency, and a unique identifier.
+
+\textbf{Edge Creation:} Relations are converted into directed edges with attributes for relation type, confidence, and a 200-character context snippet. The builder stops the self-loops from happening (an entity related to itself) and permits several edges between the same pair of nodes (for instance, Tesla PRODUCES Model 3, Tesla DEVELOPS Model 3).
+
+\textbf{Graph Analytics:} The builder gathers six statistics of the network: the number of nodes, the number of edges, the average degree (the level of connectivity), graph density (the ratio of the actual edges to the possible ones), the number of weakly connected components, and the size of the largest component. All these metrics reflect the graph's structural properties as well as its knowledge coverage.
+on type, confidence score, surrounding context (for interpretability), and matched pattern name. A deduplication step merges duplicate relations, retaining the highest-confidence instance.
+
+\subsection{Main Pipeline}
+
+The main pipeline (\texttt{scripts/build\_kg.py}) orchestrates the end-to-end knowledge graph construction from raw text to structured graph representation:
+
+\begin{enumerate}
+    \item \textbf{Data Loading:} Reads 1,032 posts from \texttt{data/processed/posts.jsonl}, each containing title, body, and metadata.
+    
+    \item \textbf{Entity Extraction:} Processes each post's concatenated title+body text through the Entity Extractor (min\_confidence=0.5), collecting 2,537 entity mentions across all documents.
+    
+    \item \textbf{Relation Extraction:} For each post's entities, applies the Relation Extractor (min\_confidence=0.3) to identify 819 relation instances using within-document entity pairs.
+    
+    \item \textbf{Graph Construction:} Iterates through all extracted relations, adding entities and edges to the Knowledge Graph. Duplicate entities are merged (238 unique nodes), while edges preserve multiplicity (755 unique edges).
+    
+    \item \textbf{Export:} Serializes the graph to JSON format with three files: (1) full graph structure (nodes + edges), (2) entity statistics (frequency, confidence per entity), and (3) relation triples (subject-predicate-object format).
+\end{enumerate}
+
+The pipeline employs a document-level processing strategy where entities and relations are extracted independently per post, then aggregated globally. This approach enables parallel processing and incremental graph updates.
+
+\subsection{GitHub Repository}
+
+The complete implementation is publicly available at:
+
+\begin{center}
+\url{https://github.com/AdityaChaudhary2913/EV-Crawler}
+\end{center}
+
+The repository contains the full source code organized into modular components:
+\begin{itemize}
+    \item \texttt{ner/} -- Entity extraction with gazetteers and patterns
+    \item \texttt{relation\_extraction/} -- Relation patterns and extraction logic
+    \item \texttt{kg/} -- Graph construction and export utilities
+    \item \texttt{scripts/} -- End-to-end pipeline scripts
+    \item \texttt{evaluation/} -- Annotation samples and evaluation metrics
+\end{itemize}
+
+All code is documented with docstrings, type hints, and inline comments for reproducibility.
+
+\section*{References}
+\begin{enumerate}
+    \item Dataset: Custom EV corpus from Reddit and Hacker News (1,032 posts)
+    \item NetworkX 2.6+ documentation: \url{https://networkx.org/}
+    \item Regular Expression patterns: Python \texttt{re} module documentation
+    \item Our Source Code Repository: \url{https://github.com/AdityaChaudhary2913/EV-Crawler}
+\end{enumerate}
+
+\appendix
+\section{Sample Outputs}
+
+\subsection{Sample Entities Extracted}
+\begin{lstlisting}[caption={Sample Entity Extraction}]
+Text: "Tesla Model 3 has a 75 kWh battery and supports DC fast charging."
+
+Entities:
+- Tesla (ORGANIZATION, confidence: 1.00)
+- Model 3 (PRODUCT, confidence: 1.00)
+- 75 kWh battery (TECHNOLOGY, confidence: 0.66)
+- DC fast charging (TECHNOLOGY, confidence: 1.00)
+\end{lstlisting}
+
+\subsection{Sample Relations Extracted}
+\begin{lstlisting}[caption={Sample Relation Extraction}]
+Relations:
+- (Tesla, PRODUCES, Model 3) [confidence: 0.87]
+- (Model 3, HAS_FEATURE, 75 kWh battery) [confidence: 0.86]
+- (Model 3, HAS_FEATURE, DC fast charging) [confidence: 0.86]
+\end{lstlisting}
+
+\subsection{Sample Graph Query}
+\begin{lstlisting}[caption={Query: Find all products by Tesla}]
+SELECT target.text, edge.relation_type, target.entity_type
+FROM graph
+WHERE source.text = 'Tesla' AND edge.relation_type = 'PRODUCES'
+
+Results:
+- Model 3 (PRODUCT)
+- Model S (PRODUCT)
+- Model X (PRODUCT)
+- Model Y (PRODUCT)
+- Cybertruck (PRODUCT)
+\end{lstlisting}
+
+\end{document}

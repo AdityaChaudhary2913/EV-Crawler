@@ -1,0 +1,57 @@
+COMPREHENSIVE SYSTEM EVALUATION SUMMARY
+================================================================================
+
+1. NER PERFORMANCE
+----------------------------------------
+Precision: 1.0000
+Recall:    0.9459
+F1-Score:  0.9722
+
+By Entity Type:
+  LOCATION:
+    P: 1.0000, R: 1.0000, F1: 1.0000
+  ORGANIZATION:
+    P: 1.0000, R: 1.0000, F1: 1.0000
+  POLICY:
+    P: 1.0000, R: 1.0000, F1: 1.0000
+  PRODUCT:
+    P: 1.0000, R: 1.0000, F1: 1.0000
+  TECHNOLOGY:
+    P: 1.0000, R: 0.7778, F1: 0.8750
+
+2. RE PERFORMANCE
+----------------------------------------
+Precision: 0.1912
+Recall:    0.5000
+F1-Score:  0.2766
+
+By Relation Type:
+  AVAILABLE_IN:
+    P: 1.0000, R: 0.2500, F1: 0.4000
+  BENEFITS_FROM:
+    P: 1.0000, R: 0.3333, F1: 0.5000
+  COMPETES_WITH:
+    P: 0.0000, R: 0.0000, F1: 0.0000
+  DEVELOPS:
+    P: 1.0000, R: 1.0000, F1: 1.0000
+  HAS_FEATURE:
+    P: 0.5000, R: 0.1667, F1: 0.2500
+  LOCATED_IN:
+    P: 0.0000, R: 0.0000, F1: 0.0000
+  PARTNERS_WITH:
+    P: 1.0000, R: 1.0000, F1: 1.0000
+  PRODUCES:
+    P: 1.0000, R: 1.0000, F1: 1.0000
+  USES:
+    P: 1.0000, R: 1.0000, F1: 1.0000
+
+3. KNOWLEDGE GRAPH QUALITY
+----------------------------------------
+Nodes: 238
+Edges: 755
+Average Degree: 3.17
+Graph Density: 0.0134
+Connected Components: 8
+Largest Component: 223 nodes
+Avg Entity Confidence: 0.8180
+Avg Relation Confidence: 0.4355

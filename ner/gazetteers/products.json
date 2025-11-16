@@ -1,0 +1,98 @@
+{
+  "TESLA_MODELS": [
+    "Model S",
+    "Model 3",
+    "Model X",
+    "Model Y",
+    "Cybertruck",
+    "Semi",
+    "Roadster"
+  ],
+  "RIVIAN_MODELS": [
+    "R1T",
+    "R1S",
+    "EDV"
+  ],
+  "FORD_MODELS": [
+    "F-150 Lightning",
+    "Mustang Mach-E",
+    "Mach-E",
+    "E-Transit"
+  ],
+  "GM_MODELS": [
+    "Hummer EV",
+    "Silverado EV",
+    "Blazer EV",
+    "Equinox EV",
+    "Bolt EV",
+    "Bolt EUV",
+    "Lyriq",
+    "Cadillac Lyriq"
+  ],
+  "VW_MODELS": [
+    "ID.3",
+    "ID.4",
+    "ID.5",
+    "ID.6",
+    "ID.7",
+    "ID.Buzz",
+    "e-tron",
+    "Q4 e-tron",
+    "Q8 e-tron",
+    "e-tron GT",
+    "Taycan"
+  ],
+  "HYUNDAI_KIA_MODELS": [
+    "Ioniq 5",
+    "Ioniq 6",
+    "Ioniq 7",
+    "Kona Electric",
+    "EV6",
+    "EV9",
+    "Niro EV"
+  ],
+  "BMW_MODELS": [
+    "i3",
+    "i4",
+    "i5",
+    "i7",
+    "iX",
+    "iX1",
+    "iX3"
+  ],
+  "NISSAN_MODELS": [
+    "Leaf",
+    "Ariya"
+  ],
+  "ATHER_MODELS": [
+    "450X",
+    "450S",
+    "450 Plus",
+    "Rizta"
+  ],
+  "OLA_MODELS": [
+    "S1 Pro",
+    "S1 Air",
+    "S1 X"
+  ],
+  "CHINESE_MODELS": [
+    "Seagull",
+    "Dolphin",
+    "Seal",
+    "Han EV",
+    "Tang EV",
+    "ET5",
+    "ET7",
+    "ES6",
+    "ES8",
+    "P7",
+    "G9"
+  ],
+  "INDIAN_MODELS": [
+    "Nexon EV",
+    "Tiago EV",
+    "Tigor EV",
+    "XUV400",
+    "ZS EV"
+  ]
+}

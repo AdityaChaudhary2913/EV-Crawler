@@ -1,0 +1,229 @@
+{
+  "ner_re_evaluation": {
+    "overall": {
+      "ner": {
+        "precision": 1.0,
+        "recall": 0.9459,
+        "f1_score": 0.9722,
+        "true_positives": 35,
+        "false_positives": 0,
+        "false_negatives": 2
+      },
+      "re": {
+        "precision": 0.1912,
+        "recall": 0.5,
+        "f1_score": 0.2766,
+        "true_positives": 13,
+        "false_positives": 55,
+        "false_negatives": 13
+      }
+    },
+    "by_entity_type": {
+      "ORGANIZATION": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "true_positives": 10,
+        "false_positives": 0,
+        "false_negatives": 0
+      },
+      "PRODUCT": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "true_positives": 8,
+        "false_positives": 0,
+        "false_negatives": 0
+      },
+      "TECHNOLOGY": {
+        "precision": 1.0,
+        "recall": 0.7778,
+        "f1_score": 0.875,
+        "true_positives": 7,
+        "false_positives": 0,
+        "false_negatives": 2
+      },
+      "LOCATION": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "true_positives": 8,
+        "false_positives": 0,
+        "false_negatives": 0
+      },
+      "POLICY": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "true_positives": 2,
+        "false_positives": 0,
+        "false_negatives": 0
+      }
+    },
+    "by_relation_type": {
+      "PRODUCES": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "true_positives": 7,
+        "false_positives": 0,
+        "false_negatives": 0
+      },
+      "HAS_FEATURE": {
+        "precision": 0.5,
+        "recall": 0.1667,
+        "f1_score": 0.25,
+        "true_positives": 1,
+        "false_positives": 1,
+        "false_negatives": 5
+      },
+      "USES": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "true_positives": 1,
+        "false_positives": 0,
+        "false_negatives": 0
+      },
+      "COMPETES_WITH": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "true_positives": 0,
+        "false_positives": 1,
+        "false_negatives": 1
+      },
+      "LOCATED_IN": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 2
+      },
+      "AVAILABLE_IN": {
+        "precision": 1.0,
+        "recall": 0.25,
+        "f1_score": 0.4,
+        "true_positives": 1,
+        "false_positives": 0,
+        "false_negatives": 3
+      },
+      "BENEFITS_FROM": {
+        "precision": 1.0,
+        "recall": 0.3333,
+        "f1_score": 0.5,
+        "true_positives": 1,
+        "false_positives": 0,
+        "false_negatives": 2
+      },
+      "DEVELOPS": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "true_positives": 1,
+        "false_positives": 0,
+        "false_negatives": 0
+      },
+      "PARTNERS_WITH": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "true_positives": 1,
+        "false_positives": 0,
+        "false_negatives": 0
+      }
+    },
+    "num_samples": 10,
+    "total_entities_predicted": 38,
+    "total_entities_gold": 39,
+    "total_relations_predicted": 68,
+    "total_relations_gold": 26
+  },
+  "kg_quality": {
+    "num_nodes": 238,
+    "num_edges": 755,
+    "avg_degree": 3.172268907563025,
+    "density": 0.013385100875793355,
+    "num_connected_components": 8,
+    "largest_component_size": 223,
+    "nodes_by_type": {
+      "LOCATION": 49,
+      "PRODUCT": 70,
+      "ORGANIZATION": 45,
+      "TECHNOLOGY": 71,
+      "POLICY": 3
+    },
+    "edges_by_relation": {
+      "DISCUSSES": 700,
+      "PRODUCES": 51,
+      "LOCATED_IN": 3,
+      "COMPETES_WITH": 1
+    },
+    "avg_entity_confidence": 0.818,
+    "avg_relation_confidence": 0.4355,
+    "degree_distribution": {
+      "1": 76,
+      "6": 8,
+      "3": 32,
+      "151": 1,
+      "23": 5,
+      "7": 4,
+      "63": 1,
+      "4": 20,
+      "33": 3,
+      "10": 6,
+      "12": 1,
+      "20": 1,
+      "2": 46,
+      "11": 7,
+      "0": 1,
+      "14": 1,
+      "19": 1,
+      "36": 1,
+      "57": 1,
+      "9": 1,
+      "49": 2,
+      "32": 1,
+      "30": 1,
+      "25": 2,
+      "8": 7,
+      "17": 1,
+      "13": 2,
+      "29": 1,
+      "5": 4
+    },
+    "frequency_distribution": {
+      "1": 76,
+      "6": 12,
+      "3": 25,
+      "185": 1,
+      "25": 5,
+      "7": 4,
+      "65": 1,
+      "4": 18,
+      "35": 2,
+      "12": 1,
+      "14": 1,
+      "24": 1,
+      "2": 44,
+      "8": 8,
+      "11": 6,
+      "5": 11,
+      "16": 1,
+      "19": 1,
+      "10": 5,
+      "36": 2,
+      "59": 1,
+      "55": 1,
+      "13": 3,
+      "40": 1,
+      "17": 2,
+      "53": 1,
+      "23": 2,
+      "31": 1,
+      "33": 1
+    }
+  },
+  "evaluation_date": "2025-11-16"
+}

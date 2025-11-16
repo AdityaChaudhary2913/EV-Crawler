@@ -1,0 +1,502 @@
+[
+  {
+    "text": "Tesla",
+    "normalized_text": "tesla",
+    "entity_type": "ORGANIZATION",
+    "confidence": 1.0,
+    "source": "gazetteer",
+    "frequency": 185,
+    "node_id": "node_3",
+    "degree": 151
+  },
+  {
+    "text": "Hyundai",
+    "normalized_text": "hyundai",
+    "entity_type": "ORGANIZATION",
+    "confidence": 1.0,
+    "source": "gazetteer",
+    "frequency": 65,
+    "node_id": "node_6",
+    "degree": 63
+  },
+  {
+    "text": "Leaf",
+    "normalized_text": "leaf",
+    "entity_type": "PRODUCT",
+    "confidence": 1.0,
+    "source": "gazetteer",
+    "frequency": 59,
+    "node_id": "node_35",
+    "degree": 57
+  },
+  {
+    "text": "US",
+    "normalized_text": "us",
+    "entity_type": "LOCATION",
+    "confidence": 0.9100000000000001,
+    "source": "gazetteer",
+    "frequency": 55,
+    "node_id": "node_39",
+    "degree": 49
+  },
+  {
+    "text": "Kia",
+    "normalized_text": "kia",
+    "entity_type": "ORGANIZATION",
+    "confidence": 1.0,
+    "source": "gazetteer",
+    "frequency": 53,
+    "node_id": "node_84",
+    "degree": 49
+  },
+  {
+    "text": "Nissan",
+    "normalized_text": "nissan",
+    "entity_type": "ORGANIZATION",
+    "confidence": 1.0,
+    "source": "gazetteer",
+    "frequency": 36,
+    "node_id": "node_34",
+    "degree": 36
+  },
+  {
+    "text": "Toyota",
+    "normalized_text": "toyota",
+    "entity_type": "ORGANIZATION",
+    "confidence": 1.0,
+    "source": "gazetteer",
+    "frequency": 35,
+    "node_id": "node_8",
+    "degree": 33
+  },
+  {
+    "text": "Ford",
+    "normalized_text": "ford",
+    "entity_type": "ORGANIZATION",
+    "confidence": 1.0,
+    "source": "gazetteer",
+    "frequency": 35,
+    "node_id": "node_92",
+    "degree": 33
+  },
+  {
+    "text": "GM",
+    "normalized_text": "gm",
+    "entity_type": "ORGANIZATION",
+    "confidence": 0.9500000000000001,
+    "source": "gazetteer",
+    "frequency": 33,
+    "node_id": "node_111",
+    "degree": 33
+  },
+  {
+    "text": "CCS",
+    "normalized_text": "ccs",
+    "entity_type": "TECHNOLOGY",
+    "confidence": 0.9733333333333334,
+    "source": "gazetteer",
+    "frequency": 36,
+    "node_id": "node_46",
+    "degree": 32
+  },
+  {
+    "text": "CHAdeMO",
+    "normalized_text": "chademo",
+    "entity_type": "TECHNOLOGY",
+    "confidence": 0.9733333333333334,
+    "source": "gazetteer",
+    "frequency": 40,
+    "node_id": "node_51",
+    "degree": 30
+  },
+  {
+    "text": "Rivian",
+    "normalized_text": "rivian",
+    "entity_type": "ORGANIZATION",
+    "confidence": 1.0,
+    "source": "gazetteer",
+    "frequency": 31,
+    "node_id": "node_108",
+    "degree": 29
+  },
+  {
+    "text": "Model 3",
+    "normalized_text": "model 3",
+    "entity_type": "PRODUCT",
+    "confidence": 1.0,
+    "source": "gazetteer",
+    "frequency": 25,
+    "node_id": "node_52",
+    "degree": 25
+  },
+  {
+    "text": "EV6",
+    "normalized_text": "ev6",
+    "entity_type": "PRODUCT",
+    "confidence": 1.0,
+    "source": "gazetteer",
+    "frequency": 25,
+    "node_id": "node_91",
+    "degree": 25
+  },
+  {
+    "text": "BMW",
+    "normalized_text": "bmw",
+    "entity_type": "ORGANIZATION",
+    "confidence": 1.0,
+    "source": "gazetteer",
+    "frequency": 25,
+    "node_id": "node_4",
+    "degree": 23
+  },
+  {
+    "text": "China",
+    "normalized_text": "china",
+    "entity_type": "LOCATION",
+    "confidence": 1.0,
+    "source": "gazetteer",
+    "frequency": 25,
+    "node_id": "node_33",
+    "degree": 23
+  },
+  {
+    "text": "NACS",
+    "normalized_text": "nacs",
+    "entity_type": "TECHNOLOGY",
+    "confidence": 0.9733333333333334,
+    "source": "gazetteer",
+    "frequency": 25,
+    "node_id": "node_47",
+    "degree": 23
+  },
+  {
+    "text": "Ioniq 5",
+    "normalized_text": "ioniq 5",
+    "entity_type": "PRODUCT",
+    "confidence": 1.0,
+    "source": "gazetteer",
+    "frequency": 23,
+    "node_id": "node_100",
+    "degree": 23
+  },
+  {
+    "text": "Model Y",
+    "normalized_text": "model y",
+    "entity_type": "PRODUCT",
+    "confidence": 1.0,
+    "source": "gazetteer",
+    "frequency": 23,
+    "node_id": "node_107",
+    "degree": 23
+  },
+  {
+    "text": "Honda",
+    "normalized_text": "honda",
+    "entity_type": "ORGANIZATION",
+    "confidence": 1.0,
+    "source": "gazetteer",
+    "frequency": 24,
+    "node_id": "node_11",
+    "degree": 20
+  },
+  {
+    "text": "BYD",
+    "normalized_text": "byd",
+    "entity_type": "ORGANIZATION",
+    "confidence": 1.0,
+    "source": "gazetteer",
+    "frequency": 19,
+    "node_id": "node_30",
+    "degree": 19
+  },
+  {
+    "text": "Volvo",
+    "normalized_text": "volvo",
+    "entity_type": "ORGANIZATION",
+    "confidence": 1.0,
+    "source": "gazetteer",
+    "frequency": 17,
+    "node_id": "node_79",
+    "degree": 17
+  },
+  {
+    "text": "NIO",
+    "normalized_text": "nio",
+    "entity_type": "ORGANIZATION",
+    "confidence": 1.0,
+    "source": "gazetteer",
+    "frequency": 16,
+    "node_id": "node_27",
+    "degree": 14
+  },
+  {
+    "text": "DCFC",
+    "normalized_text": "dcfc",
+    "entity_type": "TECHNOLOGY",
+    "confidence": 0.9733333333333334,
+    "source": "gazetteer",
+    "frequency": 17,
+    "node_id": "node_85",
+    "degree": 13
+  },
+  {
+    "text": "Mustang Mach-E",
+    "normalized_text": "mustang mach-e",
+    "entity_type": "PRODUCT",
+    "confidence": 1.0,
+    "source": "gazetteer",
+    "frequency": 13,
+    "node_id": "node_106",
+    "degree": 13
+  },
+  {
+    "text": "India",
+    "normalized_text": "india",
+    "entity_type": "LOCATION",
+    "confidence": 1.0,
+    "source": "gazetteer",
+    "frequency": 14,
+    "node_id": "node_10",
+    "degree": 12
+  },
+  {
+    "text": "Japan",
+    "normalized_text": "japan",
+    "entity_type": "LOCATION",
+    "confidence": 1.0,
+    "source": "gazetteer",
+    "frequency": 11,
+    "node_id": "node_18",
+    "degree": 11
+  },
+  {
+    "text": "FSD",
+    "normalized_text": "fsd",
+    "entity_type": "TECHNOLOGY",
+    "confidence": 0.9733333333333334,
+    "source": "gazetteer",
+    "frequency": 13,
+    "node_id": "node_49",
+    "degree": 11
+  },
+  {
+    "text": "supercharger",
+    "normalized_text": "supercharger",
+    "entity_type": "ORGANIZATION",
+    "confidence": 1.0,
+    "source": "gazetteer",
+    "frequency": 11,
+    "node_id": "node_63",
+    "degree": 11
+  },
+  {
+    "text": "Bolt EUV",
+    "normalized_text": "bolt euv",
+    "entity_type": "PRODUCT",
+    "confidence": 1.0,
+    "source": "gazetteer",
+    "frequency": 11,
+    "node_id": "node_113",
+    "degree": 11
+  },
+  {
+    "text": "Mercedes",
+    "normalized_text": "mercedes",
+    "entity_type": "ORGANIZATION",
+    "confidence": 1.0,
+    "source": "gazetteer",
+    "frequency": 13,
+    "node_id": "node_119",
+    "degree": 11
+  },
+  {
+    "text": "Ariya",
+    "normalized_text": "ariya",
+    "entity_type": "PRODUCT",
+    "confidence": 1.0,
+    "source": "gazetteer",
+    "frequency": 11,
+    "node_id": "node_130",
+    "degree": 11
+  },
+  {
+    "text": "R1T",
+    "normalized_text": "r1t",
+    "entity_type": "PRODUCT",
+    "confidence": 1.0,
+    "source": "gazetteer",
+    "frequency": 11,
+    "node_id": "node_200",
+    "degree": 11
+  },
+  {
+    "text": "Gogoro",
+    "normalized_text": "gogoro",
+    "entity_type": "ORGANIZATION",
+    "confidence": 1.0,
+    "source": "gazetteer",
+    "frequency": 12,
+    "node_id": "node_9",
+    "degree": 10
+  },
+  {
+    "text": "Germany",
+    "normalized_text": "germany",
+    "entity_type": "LOCATION",
+    "confidence": 1.0,
+    "source": "gazetteer",
+    "frequency": 10,
+    "node_id": "node_31",
+    "degree": 10
+  },
+  {
+    "text": "Shanghai",
+    "normalized_text": "shanghai",
+    "entity_type": "LOCATION",
+    "confidence": 1.0,
+    "source": "gazetteer",
+    "frequency": 10,
+    "node_id": "node_57",
+    "degree": 10
+  },
+  {
+    "text": "BZ4X",
+    "normalized_text": "bz4x",
+    "entity_type": "PRODUCT",
+    "confidence": 0.6433333333333334,
+    "source": "pattern",
+    "frequency": 10,
+    "node_id": "node_96",
+    "degree": 10
+  },
+  {
+    "text": "USA",
+    "normalized_text": "usa",
+    "entity_type": "LOCATION",
+    "confidence": 1.0,
+    "source": "gazetteer",
+    "frequency": 10,
+    "node_id": "node_102",
+    "degree": 10
+  },
+  {
+    "text": "Mach-E",
+    "normalized_text": "mach-e",
+    "entity_type": "PRODUCT",
+    "confidence": 1.0,
+    "source": "gazetteer",
+    "frequency": 10,
+    "node_id": "node_110",
+    "degree": 10
+  },
+  {
+    "text": "Chevrolet",
+    "normalized_text": "chevrolet",
+    "entity_type": "ORGANIZATION",
+    "confidence": 1.0,
+    "source": "gazetteer",
+    "frequency": 11,
+    "node_id": "node_37",
+    "degree": 9
+  },
+  {
+    "text": "ET7",
+    "normalized_text": "et7",
+    "entity_type": "PRODUCT",
+    "confidence": 1.0,
+    "source": "gazetteer",
+    "frequency": 8,
+    "node_id": "node_67",
+    "degree": 8
+  },
+  {
+    "text": "I5",
+    "normalized_text": "i5",
+    "entity_type": "PRODUCT",
+    "confidence": 0.9366666666666668,
+    "source": "gazetteer",
+    "frequency": 8,
+    "node_id": "node_71",
+    "degree": 8
+  },
+  {
+    "text": "polestar",
+    "normalized_text": "polestar",
+    "entity_type": "ORGANIZATION",
+    "confidence": 1.0,
+    "source": "gazetteer",
+    "frequency": 8,
+    "node_id": "node_81",
+    "degree": 8
+  },
+  {
+    "text": "Ioniq 6",
+    "normalized_text": "ioniq 6",
+    "entity_type": "PRODUCT",
+    "confidence": 1.0,
+    "source": "gazetteer",
+    "frequency": 8,
+    "node_id": "node_105",
+    "degree": 8
+  },
+  {
+    "text": "VW",
+    "normalized_text": "vw",
+    "entity_type": "ORGANIZATION",
+    "confidence": 0.9500000000000001,
+    "source": "gazetteer",
+    "frequency": 8,
+    "node_id": "node_123",
+    "degree": 8
+  },
+  {
+    "text": "Texas",
+    "normalized_text": "texas",
+    "entity_type": "LOCATION",
+    "confidence": 1.0,
+    "source": "gazetteer",
+    "frequency": 8,
+    "node_id": "node_176",
+    "degree": 8
+  },
+  {
+    "text": "Kona EV",
+    "normalized_text": "kona ev",
+    "entity_type": "PRODUCT",
+    "confidence": 0.6433333333333334,
+    "source": "pattern",
+    "frequency": 8,
+    "node_id": "node_188",
+    "degree": 8
+  },
+  {
+    "text": "Audi",
+    "normalized_text": "audi",
+    "entity_type": "ORGANIZATION",
+    "confidence": 1.0,
+    "source": "gazetteer",
+    "frequency": 7,
+    "node_id": "node_5",
+    "degree": 7
+  },
+  {
+    "text": "Porsche",
+    "normalized_text": "porsche",
+    "entity_type": "ORGANIZATION",
+    "confidence": 1.0,
+    "source": "gazetteer",
+    "frequency": 7,
+    "node_id": "node_50",
+    "degree": 7
+  },
+  {
+    "text": "Beijing",
+    "normalized_text": "beijing",
+    "entity_type": "LOCATION",
+    "confidence": 1.0,
+    "source": "gazetteer",
+    "frequency": 7,
+    "node_id": "node_56",
+    "degree": 7
+  }
+]

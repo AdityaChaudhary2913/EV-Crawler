@@ -1,0 +1,79 @@
+{
+  "COUNTRIES": [
+    "United States",
+    "USA",
+    "US",
+    "China",
+    "India",
+    "Germany",
+    "Norway",
+    "Netherlands",
+    "Sweden",
+    "France",
+    "United Kingdom",
+    "UK",
+    "Japan",
+    "South Korea",
+    "Canada",
+    "Australia"
+  ],
+  "US_STATES": [
+    "California",
+    "Texas",
+    "Florida",
+    "New York",
+    "Michigan",
+    "Ohio",
+    "Nevada",
+    "Arizona",
+    "Colorado",
+    "Washington",
+    "Oregon"
+  ],
+  "US_CITIES": [
+    "San Francisco",
+    "Los Angeles",
+    "Austin",
+    "Detroit",
+    "New York City",
+    "Seattle",
+    "Portland",
+    "Denver",
+    "Phoenix",
+    "Las Vegas"
+  ],
+  "INDIAN_CITIES": [
+    "Bangalore",
+    "Bengaluru",
+    "Delhi",
+    "New Delhi",
+    "Mumbai",
+    "Pune",
+    "Hyderabad",
+    "Chennai",
+    "Ahmedabad",
+    "Kolkata",
+    "Gurugram",
+    "Noida"
+  ],
+  "CHINESE_CITIES": [
+    "Beijing",
+    "Shanghai",
+    "Shenzhen",
+    "Guangzhou",
+    "Hangzhou",
+    "Chengdu",
+    "Wuhan"
+  ],
+  "EUROPEAN_CITIES": [
+    "Berlin",
+    "Munich",
+    "Stuttgart",
+    "Wolfsburg",
+    "Oslo",
+    "Stockholm",
+    "Amsterdam",
+    "Paris",
+    "London"
+  ]
+}
