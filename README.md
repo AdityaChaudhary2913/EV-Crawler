@@ -184,7 +184,7 @@ If you use this work, please cite:
   title = {EV Crawler: Focused Web Crawling and Link Analysis for Electric Vehicles Domain},
   year = {2025},
   course = {Introduction to Knowledge Graphs (IKG)},
-  institution = {[Your Institution]}
+  institution = {LNM Institute of Information Technology}
 }
 ```
 
